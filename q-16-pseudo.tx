@@ -1,0 +1,36 @@
+Display list of skills
+create skills_total variable = 0
+create booleans for each skill: skill_entered = False
+
+
+while the user has not said their completed or there are still empty skillsets continue promting user to enter skill
+
+Prompt user to enter a skill and assign to user_skill variable
+use lower() method to create lower case string for user_skill
+    
+    If skill entered matches python and the skill hasnt been entered
+        add 1 to skills_total
+    else if skill entered ruby and the skill hasnt been entered
+        add 2 to skills_total
+    else if skill entered bash and the skill hasnt been entered
+        add 4 to skills_total
+    else if skill entered git and the skill hasnt been entered
+        add 8 to skills_total
+    else if skill entered html and the skill hasnt been entered
+        add 16 to skills_total
+    else if skill entered tdd and the skill hasnt been entered
+        add 32 to skills_total
+    else if skill entered css and the skill hasnt been entered
+        add 64 to skills_total
+    else if skill entered javascript and the skill hasnt been entered
+        add 128 to skills_total
+    else
+        You havve not entered a valid skill
+
+
+user has entered complete or each skillset is true
+    if any skills set is False
+        print skill score and 
+        print skills lacking and how much they would add to their score
+    else
+        print("You have the perfect skill set for the role)
