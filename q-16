@@ -55,7 +55,7 @@ while len(candidate_skill_set) <= 7:
         print(f"\tYour skill score: {candidate_total_skill_score}")
     else:
         print("\tYour skillset: None")
-        print(f"\tYour skill score: {candidate_total_skill_score}")
+
     print("=================================================================================================\n")
     candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaSCript**\n\tPlease enter a choice from the skills above >>")
 
@@ -75,14 +75,15 @@ print("\tThankyou for applying for the junior developer role.\n")
 
 for key in candidate_skill_set:
     if key == "html" or key == "tdd" or key == "css":
-        print("\tSkill Confirmed:", key.upper())
+        print("\tSkill Recorded  \u2713", key.upper())
     elif key == "javascript":
         swaps = {"j": "J", "s": "S"}
-        print("\tSkill Confirmed:", "".join(swaps.get(i, i) for i in "javascript"))
+        print("\tSkill Recorded  \u2713", "".join(swaps.get(i, i) for i in "javascript"))
     else:
-        print("\tSkill Confirmed:", key.capitalize())
+        print("\tSkill Recorded  \u2713", key.capitalize())
+    
+print(f"\n\tYour skill score is: {candidate_total_skill_score}")
 print("\n======================================================================================================")
-
 
 
 
