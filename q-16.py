@@ -83,6 +83,13 @@ while len(candidate_skill_set) <= 7:
     if candidate_skill_entered == "c":
         break
 
+    if not candidate_skill_entered in full_skill_set:
+        print("\n====================================================================================================")
+        print(f"\t{candidate_skill_entered} is not a valid selection!\n\tPlease try again")
+        print("======================================================================================================\n")
+        press_to_continue()
+
+
 #The user has entered C or c (Completed) so we escape out of the while loop.
 #clear the screen and print the candidates results
 os.system('cls||clear')
