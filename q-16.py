@@ -3,6 +3,8 @@ import os
 
 # User prompt fuction with information on how to use the program
 def user_prompt():
+    """This function clears the screen each time and prints a user prompt with instructions on how to use the program
+    """    
     os.system('cls||clear')
     print("|===============================================================================================|\n|\t\t\t\t\t\t\t\t\t\t\t\t|")
     print("|\tWelcome to the application for the junior developer role at ACME Corporation.\t\t|")
@@ -14,6 +16,9 @@ def user_prompt():
 
 # prompt user to press any key to contine - program execution is fronzen until a key press happens
 def press_to_continue():
+    """This function freezes the program execution and prints a press any key to continue message.
+    Once a key is pressed it exits
+    """   
     os.system("/bin/bash -c 'read -s -n 1 -p \"\n\t\tPress any key to continue...\"'\n")
     os.system('cls||clear')
     print()
