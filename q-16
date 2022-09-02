@@ -52,7 +52,6 @@ while len(candidate_skill_set) <= 7:
     print("\n=================================================================================================")
     if candidate_skill_set:
         print(f"\tYour skillset: {candidate_skill_set}")
-        print(f"\tYour skill score: {candidate_total_skill_score}")
     else:
         print("\tYour skillset: None")
 
@@ -83,6 +82,10 @@ for key in candidate_skill_set:
         print("\tSkill Recorded  \u2713", key.capitalize())
     
 print(f"\n\tYour skill score is: {candidate_total_skill_score}")
+
+
+if len(candidate_skill_set) == 8:
+    print("\n\tCongratulations! You got the job, you're the perfect candidate!\n")
 print("\n======================================================================================================")
 
 
