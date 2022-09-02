@@ -72,6 +72,9 @@ Hypertext Transfer Protocol Secure (HTTPS) is the same as HTTP except that it ha
 Developer tools are software add-ons that are included with a browser to allow web developers to inspect, test and debug their code. They work with a few different web technologies including HTML, CSS and JavaScript. (Wikipedia) [^20]
 
 **Explain** how each technology has contributed to the development of client and server communication over the internet *(50 - 150 words for each technology)*.
+- **TCP**
+- **HTTP and HTTPS**
+- **Web Browsers (requests, rendering and developer tools)**
 
 ## Question 4 - Python Data Structures
 
