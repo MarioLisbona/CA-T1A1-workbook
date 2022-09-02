@@ -51,7 +51,8 @@ while len(candidate_skill_set) <= 7:
     user_prompt()
     print("\n=================================================================================================")
     if candidate_skill_set:
-        print(f"\tYour skillset: {candidate_skill_set}")
+        skills_keys_list = list(candidate_skill_set.keys())
+        print(f"\tYour skillset: {skills_keys_list}")
     else:
         print("\tYour skillset: None")
 
