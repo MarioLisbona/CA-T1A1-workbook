@@ -47,6 +47,7 @@ user_prompt()
 #wait for keypress,
 press_to_continue()
 
+
 # If the skill entered by the user is has not already been entered, find the skill/value in the full_skill dict and add it to user skill set dict
 
 #There are 8 skills. While loop will be true for 7th skill entered, when the 8th skill(last one) is entered this loop will return to the condition and it will fail
@@ -79,10 +80,9 @@ while len(candidate_skill_set) <= 7:
                 candidate_total_skill_score += value
 
     #If the user input is C or c (Completed) then them escape out of the while loop with break
-    if candidate_skill_entered.lower() == "c":
+    if candidate_skill_entered == "c":
         break
-   
-   
+
 #The user has entered C or c (Completed) so we escape out of the while loop.
 #clear the screen and print the candidates results
 os.system('cls||clear')
