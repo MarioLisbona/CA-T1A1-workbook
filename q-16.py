@@ -23,6 +23,16 @@ def press_to_continue():
     os.system('cls||clear')
     print()
 
+def format_string(dict, unicode_string):
+    for k in dict:
+        if k == "html" or k == "tdd" or k == "css":
+            print("\t\t\t\u27A4", k.upper())
+        elif k == "javascript":
+            swaps = {"j": "J", "s": "S"}
+            print("\t\t\t\u27A4", "".join(swaps.get(i, i) for i in "javascript"))
+        else:
+            print("\t\t\t\u27A4", k.capitalize())
+
 # variable for candidate's total skill score
 candidate_total_skill_score = 0
 
@@ -60,14 +70,23 @@ while len(candidate_skill_set) <= 7:
     if candidate_skill_set:
         print("\tYour skillset:")
         #iterate over candidate_skill_set dictionary a and format each key accordingly
-        for key in candidate_skill_set:
-            if key == "html" or key == "tdd" or key == "css":
-                print("\t\t\t\u27A4", key.upper())
-            elif key == "javascript":
-                swaps = {"j": "J", "s": "S"}
-                print("\t\t\t\u27A4", "".join(swaps.get(i, i) for i in "javascript"))
-            else:
-                print("\t\t\t\u27A4", key.capitalize())
+        format_string(candidate_skill_set, "u27A4")
+        
+        
+        
+        
+        
+        
+        
+        # for key in candidate_skill_set:
+        #     if key == "html" or key == "tdd" or key == "css":
+        #         print("\t\t\t\u27A4", key.upper())
+        #     elif key == "javascript":
+        #         swaps = {"j": "J", "s": "S"}
+        #         print("\t\t\t\u27A4", "".join(swaps.get(i, i) for i in "javascript"))
+        #     else:
+        #         print("\t\t\t\u27A4", key.capitalize())
+
 
     else:
         print("\tYour skillset: None")
@@ -108,7 +127,7 @@ print("\tThankyou for applying for the junior developer role.\n")
 #iterate over the keys in candidate_skill_set and print each one to the screen
 #if/elif/else statements are to format each skill - capitalised, all caps (HTML TDD CSS) or for javascript swapping j and s for capitals
 
-#this is hte only bit of repeated code - the sme formatting happens in the running skill list. Will try to put this into a function
+#this is the only bit of repeated code - the sme formatting happens in the running skill list. Will try to put this into a function
 for key in candidate_skill_set:
     if key == "html" or key == "tdd" or key == "css":
         print("\tSkill Recorded  \u2713", key.upper())
