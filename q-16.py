@@ -50,15 +50,16 @@ press_to_continue()
 
 # If the skill entered by the user is has not already been entered, find the skill/value in the full_skill dict and add it to user skill set dict
 
-#There are 8 skills. While loop will be true for 7th skill entered, when the 8th skill(last one) is entered this loop will return to the condition and it will fail
+#There are 8 skills. While loop will be true for 7th skill entered, when the 8th skill(last one) is entered this loop will return to the condition and it will fail so the while loop will exit at the end of the 8th iteration
 while len(candidate_skill_set) <= 7:
-    # display user prompt each time - trhis creates the effect of the user prompt never leaving, when in fact the screen is being cleared each time at the end of the while loop
+    # display user prompt each time - this creates the effect of the user prompt never leaving, when in fact the screen is being cleared at the beginning of every user_prompt function call
     user_prompt()
-    #if the dict user_skill_set has items, print only the keys
+    #if the dictionary candidate_skill_set has items, print only the keys
     #else print "none"
     print("\n=================================================================================================")
     if candidate_skill_set:
         print("\tYour skillset:")
+        #iterate over candidate_skill_set dictionary a and format each key accordingly
         for key in candidate_skill_set:
             if key == "html" or key == "tdd" or key == "css":
                 print("\t\t\t\u27A4", key.upper())
@@ -73,12 +74,12 @@ while len(candidate_skill_set) <= 7:
     print("=================================================================================================\n")
 
     #prompting user to enter a skill. lower() at the end to convert whatever they type into a lowercase string
-    candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaSCript**\n\tPlease enter a choice from the skills above >>").lower()
+    candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaSCript**\n\tPlease enter a choice from the skills above (C to Complete application) >>  ").lower()
 
     #using get() - it will return none (false) if the skill entered has already been entered (is already a key in the dictionary)
     #if the skill entered is not a key in the candidate_skill_set dict
     #then iterate over the full_skill_set dictionary and return the key and value on each iteration
-    #if the current key equals the skill enteredcreate a new key value pair with the current key and value with line 71: candidate_skill_set[key] = value
+    #if the current key equals the skill entered create a new key value pair with the current key and value with line 71: candidate_skill_set[key] = value
     #line 72 will take the current value and increment candidate_total_skill_score by that value
     if not candidate_skill_set.get(candidate_skill_entered):
         for key, value in full_skill_set.items():
@@ -86,10 +87,11 @@ while len(candidate_skill_set) <= 7:
                 candidate_skill_set[key] = value
                 candidate_total_skill_score += value
 
-    #If the user input is C or c (Completed) then them escape out of the while loop with break
+    #If the user input is C or c (Completed) then escape out of the while loop with break
     if candidate_skill_entered == "c":
         break
 
+    #if the user input is not a listed skill, print an error message
     if not candidate_skill_entered in full_skill_set:
         print("\n====================================================================================================")
         print(f"\t{candidate_skill_entered} is not a valid selection!\n\tPlease try again")
@@ -103,30 +105,33 @@ os.system('cls||clear')
 print("====================================================================================================\n")
 print("\tThankyou for applying for the junior developer role.\n")
 
-#iterate over the keys in candidate_skill_set and print each one to the screen with a tick afterwards
+#iterate over the keys in candidate_skill_set and print each one to the screen
 #if/elif/else statements are to format each skill - capitalised, all caps (HTML TDD CSS) or for javascript swapping j and s for capitals
+
+#this is hte only bit of repeated code - the sme formatting happens in the running skill list. Will try to put this into a function
 for key in candidate_skill_set:
     if key == "html" or key == "tdd" or key == "css":
-        print("\tSkill Recorded  \u27A4", key.upper(), "\t\u2713")
+        print("\tSkill Recorded  \u2713", key.upper())
     elif key == "javascript":
         swaps = {"j": "J", "s": "S"}
-        print("\tSkill Recorded  \u27A4", "".join(swaps.get(i, i) for i in "javascript"), "\t\u2713")
+        print("\tSkill Recorded  \u2713", "".join(swaps.get(i, i) for i in "javascript"))
     else:
-        print("\tSkill Recorded  \u27A4", key.capitalize(), "\t\u2713")
+        print("\tSkill Recorded  \u2713", key.capitalize())
 
 #printing the total score for the candidate
-print(f"\n\tYour skill score is: {candidate_total_skill_score}")
+print(f"\n\tYour skill score is \u27A4 {candidate_total_skill_score}")
 
 #If the candidate has entered every skill, they have a perfect score. They get the job!
+#show message with skills not entered and value that could improve score.
 if len(candidate_skill_set) == 8:
     print("\n\tCongratulations! You got the job, you're the perfect candidate!\n")
 else:
-    print("\n\tHere ar some skills that may inprove your score:\n")
+    print("\n\tBelow are some skills that would improve your score:\n")
 for key, value in full_skill_set.items():
     if not key in candidate_skill_set:
         if key == "python":
-            print(f"\tExperience with {key} would add {value} more point to your score.")
+            print(f"\t\u27A4{value} point:\t\u272D Experience with {key}")
         else:
-            print(f"\tExperience with {key} would add {value} more points to your score.")
+            print(f"\t\u27A4{value} points\t\u272D Experience with {key}")
 
 print("\n======================================================================================================")
