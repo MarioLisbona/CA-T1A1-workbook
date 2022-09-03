@@ -58,9 +58,16 @@ while len(candidate_skill_set) <= 7:
     #else print "none"
     print("\n=================================================================================================")
     if candidate_skill_set:
-        #creating a list here from the dict keys adn then printing the keys
-        skills_keys_list = list(candidate_skill_set.keys())
-        print(f"\tYour skillset: {skills_keys_list}")
+        print("\tYour skillset:")
+        for key in candidate_skill_set:
+            if key == "html" or key == "tdd" or key == "css":
+                print("\t\t\t\u2713", key.upper())
+            elif key == "javascript":
+                swaps = {"j": "J", "s": "S"}
+                print("\t\t\t\u2713", "".join(swaps.get(i, i) for i in "javascript"))
+            else:
+                print("\t\t\t\u2713", key.capitalize())
+
     else:
         print("\tYour skillset: None")
     print("=================================================================================================\n")
