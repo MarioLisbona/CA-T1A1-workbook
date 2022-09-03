@@ -61,12 +61,12 @@ while len(candidate_skill_set) <= 7:
         print("\tYour skillset:")
         for key in candidate_skill_set:
             if key == "html" or key == "tdd" or key == "css":
-                print("\t\t\t\u2713", key.upper())
+                print("\t\t\t\u27A4", key.upper())
             elif key == "javascript":
                 swaps = {"j": "J", "s": "S"}
-                print("\t\t\t\u2713", "".join(swaps.get(i, i) for i in "javascript"))
+                print("\t\t\t\u27A4", "".join(swaps.get(i, i) for i in "javascript"))
             else:
-                print("\t\t\t\u2713", key.capitalize())
+                print("\t\t\t\u27A4", key.capitalize())
 
     else:
         print("\tYour skillset: None")
@@ -107,12 +107,12 @@ print("\tThankyou for applying for the junior developer role.\n")
 #if/elif/else statements are to format each skill - capitalised, all caps (HTML TDD CSS) or for javascript swapping j and s for capitals
 for key in candidate_skill_set:
     if key == "html" or key == "tdd" or key == "css":
-        print("\tSkill Recorded  \u2713", key.upper())
+        print("\tSkill Recorded  \u27A4", key.upper(), "\t\u2713")
     elif key == "javascript":
         swaps = {"j": "J", "s": "S"}
-        print("\tSkill Recorded  \u2713", "".join(swaps.get(i, i) for i in "javascript"))
+        print("\tSkill Recorded  \u27A4", "".join(swaps.get(i, i) for i in "javascript"), "\t\u2713")
     else:
-        print("\tSkill Recorded  \u2713", key.capitalize())
+        print("\tSkill Recorded  \u27A4", key.capitalize(), "\t\u2713")
 
 #printing the total score for the candidate
 print(f"\n\tYour skill score is: {candidate_total_skill_score}")
@@ -121,9 +121,12 @@ print(f"\n\tYour skill score is: {candidate_total_skill_score}")
 if len(candidate_skill_set) == 8:
     print("\n\tCongratulations! You got the job, you're the perfect candidate!\n")
 else:
-    print("Here ar some skills that may inprove your score:\n")
+    print("\n\tHere ar some skills that may inprove your score:\n")
 for key, value in full_skill_set.items():
     if not key in candidate_skill_set:
-        print(key, value)
+        if key == "python":
+            print(f"\tExperience with {key} would add {value} more point to your score.")
+        else:
+            print(f"\tExperience with {key} would add {value} more points to your score.")
 
 print("\n======================================================================================================")
