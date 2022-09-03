@@ -3,7 +3,8 @@ import os
 
 # User prompt fuction with information on how to use the program
 def user_prompt():
-    """This function clears the screen each time and prints a user prompt with instructions on how to use the program
+    """
+    This function clears the screen each time and prints a user prompt with instructions on how to use the program
     """    
     os.system('cls||clear')
     print("|===============================================================================================|\n|\t\t\t\t\t\t\t\t\t\t\t\t|")
@@ -16,22 +17,33 @@ def user_prompt():
 
 # prompt user to press any key to contine - program execution is fronzen until a key press happens
 def press_to_continue():
-    """This function freezes the program execution and prints a press any key to continue message.
+    """
+    This function freezes the program execution and prints a press any key to continue message.
     Once a key is pressed it exits
     """   
     os.system("/bin/bash -c 'read -s -n 1 -p \"\n\t\tPress any key to continue...\"'\n")
     os.system('cls||clear')
     print()
 
-def format_string(dict, unicode_string):
-    for k in dict:
-        if k == "html" or k == "tdd" or k == "css":
-            print("\t\t\t\u27A4", k.upper())
-        elif k == "javascript":
-            swaps = {"j": "J", "s": "S"}
-            print("\t\t\t\u27A4", "".join(swaps.get(i, i) for i in "javascript"))
-        else:
-            print("\t\t\t\u27A4", k.capitalize())
+
+def format_string(k):
+    """
+    This function will return a formatted string.
+    capitalises all keys except for: uppercase for html, tdd and css, Uppercase s and s for javascript
+
+    Args:
+        k (string): Key for the current iteration of dictionary
+
+    Returns:
+        string: Formatted string
+    """    
+    if k == "html" or k == "tdd" or k == "css":
+        return k.upper()
+    elif k == "javascript":
+        swaps = {"j": "J", "s": "S"}
+        return "".join(swaps.get(i, i) for i in "javascript")
+    else:
+        return k.capitalize()
 
 # variable for candidate's total skill score
 candidate_total_skill_score = 0
@@ -69,25 +81,10 @@ while len(candidate_skill_set) <= 7:
     print("\n=================================================================================================")
     if candidate_skill_set:
         print("\tYour skillset:")
-        #iterate over candidate_skill_set dictionary a and format each key accordingly
-        format_string(candidate_skill_set, "u27A4")
-        
-        
-        
-        
-        
-        
-        
-        # for key in candidate_skill_set:
-        #     if key == "html" or key == "tdd" or key == "css":
-        #         print("\t\t\t\u27A4", key.upper())
-        #     elif key == "javascript":
-        #         swaps = {"j": "J", "s": "S"}
-        #         print("\t\t\t\u27A4", "".join(swaps.get(i, i) for i in "javascript"))
-        #     else:
-        #         print("\t\t\t\u27A4", key.capitalize())
-
-
+        #iterate over candidate_skill_set dictionary 
+        #Pass key as argument to format_string function to format each key accordingly
+        for key in candidate_skill_set:
+            print("\t\t\t\u27A4", format_string(key))
     else:
         print("\tYour skillset: None")
     print("=================================================================================================\n")
@@ -125,17 +122,11 @@ print("=========================================================================
 print("\tThankyou for applying for the junior developer role.\n")
 
 #iterate over the keys in candidate_skill_set and print each one to the screen
-#if/elif/else statements are to format each skill - capitalised, all caps (HTML TDD CSS) or for javascript swapping j and s for capitals
 
-#this is the only bit of repeated code - the sme formatting happens in the running skill list. Will try to put this into a function
+#iterate over candidate_skill_set dictionary 
+#Pass key as argument to format_string function to format each key accordingly
 for key in candidate_skill_set:
-    if key == "html" or key == "tdd" or key == "css":
-        print("\tSkill Recorded  \u2713", key.upper())
-    elif key == "javascript":
-        swaps = {"j": "J", "s": "S"}
-        print("\tSkill Recorded  \u2713", "".join(swaps.get(i, i) for i in "javascript"))
-    else:
-        print("\tSkill Recorded  \u2713", key.capitalize())
+    print("\tSkill Recorded  \u2713", format_string(key))
 
 #printing the total score for the candidate
 print(f"\n\tYour skill score is \u27A4 {candidate_total_skill_score}")
@@ -149,8 +140,9 @@ else:
 for key, value in full_skill_set.items():
     if not key in candidate_skill_set:
         if key == "python":
-            print(f"\t\u27A4{value} point:\t\u272D Experience with {key}")
+            print("\t\u27A4", value, "point:\t\u272D Experience with", format_string(key))
         else:
-            print(f"\t\u27A4{value} points\t\u272D Experience with {key}")
+            print("\t\u27A4", value, "points:\t\u272D Experience with", format_string(key))
+
 
 print("\n======================================================================================================")
