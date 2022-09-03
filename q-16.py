@@ -117,14 +117,13 @@ for key in candidate_skill_set:
 #printing the total score for the candidate
 print(f"\n\tYour skill score is: {candidate_total_skill_score}")
 
-print("Here ar some skills that may inprove your score:\n")
-
-for key, value in full_skill_set.items():
-    if not key in candidate_skill_set:
-        print(key, value)
-
 #If the candidate has entered every skill, they have a perfect score. They get the job!
 if len(candidate_skill_set) == 8:
     print("\n\tCongratulations! You got the job, you're the perfect candidate!\n")
+else:
+    print("Here ar some skills that may inprove your score:\n")
+for key, value in full_skill_set.items():
+    if not key in candidate_skill_set:
+        print(key, value)
 
 print("\n======================================================================================================")
