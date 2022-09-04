@@ -21,7 +21,7 @@ def press_to_continue():
     This function freezes the program execution and prints a press any key to continue message.
     Once a key is pressed it exits
     """   
-    os.system("/bin/bash -c 'read -s -n 1 -p \"\n\t\tPress any key to continue...\"'\n")
+    os.system("/bin/bash -c 'read -s -n 1 -p \"\n\tPress any key to continue...\"'\n")
     os.system('cls||clear')
     print()
 
@@ -29,7 +29,7 @@ def press_to_continue():
 def format_string(k):
     """
     This function will return a formatted string.
-    capitalises all keys except for: uppercase for html, tdd and css, Uppercase s and s for javascript
+    It capitalises all keys except for: uppercase for html, tdd and css, Uppercase s and j for javascript
 
     Args:
         k (string): Key for the current iteration of dictionary
@@ -40,7 +40,10 @@ def format_string(k):
     if k == "html" or k == "tdd" or k == "css":
         return k.upper()
     elif k == "javascript":
+        #create a dict with letters to swap
         swaps = {"j": "J", "s": "S"}
+        #iterate over the string "javascript" for every j or s found gets returns the capitalised letter.
+        #join appends the return values to an empty string
         return "".join(swaps.get(i, i) for i in "javascript")
     else:
         return k.capitalize()
@@ -60,7 +63,7 @@ full_skill_set = {
     "javascript": 128
 }
 
-#dictionary tto hold appplicants skill set
+#dictionary to hold appplicants skill set
 candidate_skill_set = {}
 
 #calling userprompt for first time with no skillset listes - just insctructions
@@ -69,13 +72,11 @@ user_prompt()
 #wait for keypress,
 press_to_continue()
 
-
-# If the skill entered by the user is has not already been entered, find the skill/value in the full_skill dict and add it to user skill set dict
-
-#There are 8 skills. While loop will be true for 7th skill entered, when the 8th skill(last one) is entered this loop will return to the condition and it will fail so the while loop will exit at the end of the 8th iteration
+#There are 8 skills. While loop will be true for 7th skill entered, when the 8th skill(last one) is entered this loop will run, return to the condition and it will fail so the while loop will exit at the end of the 8th iteration
 while len(candidate_skill_set) <= 7:
     # display user prompt each time - this creates the effect of the user prompt never leaving, when in fact the screen is being cleared at the beginning of every user_prompt function call
     user_prompt()
+
     #if the dictionary candidate_skill_set has items, print only the keys
     #else print "none"
     print("\n=================================================================================================")
@@ -89,21 +90,28 @@ while len(candidate_skill_set) <= 7:
         print("\tYour skillset: None")
     print("=================================================================================================\n")
 
-    #prompting user to enter a skill. lower() at the end to convert whatever they type into a lowercase string
-    candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaSCript**\n\tPlease enter a choice from the skills above (C to Complete application) >>  ").lower()
+    #prompting user to enter a skill. lower() at the end to converts user input to lowercase
+    candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaSCript**\n\tPlease enter a choice from the skills above (C to (C)omplete application) >>  ").lower()
 
-    #using get() - it will return none (false) if the skill entered has already been entered (is already a key in the dictionary)
+    #using get() - scan candidate_skill_set for the user input. get() will return none (false) if the user input has already been entered (is already a key in the dictionary)
     #if the skill entered is not a key in the candidate_skill_set dict
-    #then iterate over the full_skill_set dictionary and return the key and value on each iteration
-    #if the current key equals the skill entered create a new key value pair with the current key and value with line 71: candidate_skill_set[key] = value
-    #line 72 will take the current value and increment candidate_total_skill_score by that value
+    #then iterate over the full_skill_set dictionary and return the key and value on each iteration using items() method
+    #if the current key equals the user input create a new key value pair with the current key and value with line 104: candidate_skill_set[key] = value
+    #line 105 will take the current value and increment candidate_total_skill_score by that value
     if not candidate_skill_set.get(candidate_skill_entered):
         for key, value in full_skill_set.items():
             if key == candidate_skill_entered:
                 candidate_skill_set[key] = value
                 candidate_total_skill_score += value
 
-    #If the user input is C or c (Completed) then escape out of the while loop with break
+    #else print an error message - The skill has already been entered
+    else:
+        print("\n====================================================================================================")
+        print(f"\t{format_string(candidate_skill_entered)} has alredy been entered!\n\tPlease try again")
+        print("======================================================================================================\n")
+        press_to_continue()
+
+    #If the user input is C or c (Completed) then escape out of the while loop with break statement
     if candidate_skill_entered == "c":
         break
 
@@ -132,17 +140,15 @@ for key in candidate_skill_set:
 print(f"\n\tYour skill score is \u27A4 {candidate_total_skill_score}")
 
 #If the candidate has entered every skill, they have a perfect score. They get the job!
-#show message with skills not entered and value that could improve score.
+#When all 8 skills are not entered show message with skills not entered and value that could improve score.
 if len(candidate_skill_set) == 8:
-    print("\n\tCongratulations! You got the job, you're the perfect candidate!\n")
+    print("\n\tCongratulations! You got the job, you're the perfect candidate!")
 else:
-    print("\n\tBelow are some skills that would improve your score:\n")
+    print("\n\tBelow is a list of skills that will improve your score:\n")
 for key, value in full_skill_set.items():
     if not key in candidate_skill_set:
         if key == "python":
             print("\t\u27A4", value, "point:\t\u272D Experience with", format_string(key))
         else:
             print("\t\u27A4", value, "points:\t\u272D Experience with", format_string(key))
-
-
 print("\n======================================================================================================")

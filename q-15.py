@@ -1,18 +1,34 @@
-# If it’s raining and the temperature is less than 15 degrees ---------->“It’s wet and cold”
-# if it's not raining and temperature is less than 15 degrees ---------->“It’s not raining but cold”. 
-# If it’s greater than or equal to 15 but not raining------------------->“It’s warm but not raining” 
-# otherwise tell them--------------------------------------------------->“It’s warm and raining”.
-
-# You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
-
+# creating a bool for raining and setting user_input_rainig to 0 so the while loop will run at least once
 raining = False
-temp = round(float(15),1)
+user_input_raining = 0
 
-if raining and temp < 15:
-    print("It's wet and cold")
-elif not raining and temp < 15:
-    print("It's not raining but cold")
-elif not raining and temp >= 15:
-    print("It's warm but not raining")
+#while loop to to force use to enter a digit for temperature
+#isdigit() will return false for anything but a number
+user_input_temp = input("\nWhat is the temperature outside? >> ")
+while not user_input_temp.isdigit():
+    print("Temp needs to be a number")
+    user_input_temp = input("\nWhat is the temperature outside? >> ")
+
+#while loop to forse user to enter y or n. User can enter Y or N as well, as the lower() function
+#is used to  convert user input to lowercase.
+#if elif statement changes the bool for raining to true of false and gives an error for any input besides
+#y or n
+while (user_input_raining != "y" and user_input_raining != "n"):
+    user_input_raining = input("Is it raining outside? y for yes, n for no >> ").lower()
+    if user_input_raining == "y":
+        raining = True
+    elif user_input_raining == "n":
+        raining = False
+    else:
+        print(f"\n{user_input_raining} is not a valid response")
+
+#if/elif/else statement to print out correct messages based on the the comparisona and logical operators
+#using round() and float() to convert the string inut to float then round to 1 decimal place.
+if raining and round(float(user_input_temp), 1) < 15:
+    print("\nIt's wet and cold")
+elif not raining and round(float(user_input_temp), 1) < 15:
+    print("\nIt's not raining but cold")
+elif not raining and round(float(user_input_temp), 1) >= 15:
+    print("\nIt's warm but not raining")
 else:
-    print("It's warm and raining")
+    print("\nIt's warm and raining")
