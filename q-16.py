@@ -106,9 +106,9 @@ while len(candidate_skill_set) <= 7:
 
     #else print an error message - The skill has already been entered
     else:
-        print("\n====================================================================================================")
+        print("\n==================================================================================================")
         print(f"\t{format_string(candidate_skill_entered)} has alredy been entered!\n\tPlease try again")
-        print("======================================================================================================\n")
+        print("==================================================================================================\n")
         press_to_continue()
 
     #If the user input is C or c (Completed) then escape out of the while loop with break statement
@@ -117,9 +117,9 @@ while len(candidate_skill_set) <= 7:
 
     #if the user input is not a listed skill, print an error message
     if not candidate_skill_entered in full_skill_set:
-        print("\n====================================================================================================")
+        print("\n==================================================================================================")
         print(f"\t{candidate_skill_entered} is not a valid selection!\n\tPlease try again")
-        print("======================================================================================================\n")
+        print("==================================================================================================\n")
         press_to_continue()
 
 
