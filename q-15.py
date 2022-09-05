@@ -35,20 +35,27 @@
 
 
 def rain_temp(raining, temperature):
+    """
+    This functions returns a string with a different message depending on whether its raining or not and what the temperature is.
+
+    Args:
+        raining (Bool): true of false pool - whether its raining or not.
+        temperature (int): The temperature in degrees.
+    """    
     if raining and temperature < 15:
-        print("\nIt's wet and cold")
+        return "\nIt's wet and cold"
     elif not raining and temperature < 15:
-        print("\nIt's not raining but cold")
+        return "\nIt's not raining but cold"
     elif not raining and temperature >= 15:
-        print("\nIt's warm but not raining")
+        return "\nIt's warm but not raining"
     else:
-        print("\nIt's warm and raining")    
+        return "\nIt's warm and raining"
 
-
-rain_temp(True, 14)
-rain_temp(False, 14)
-rain_temp(False, 15)
-rain_temp(True, 46)
+print(rain_temp(True, 14))
+print(rain_temp(False, 14))
+print(rain_temp(False, 15))
+print(rain_temp(True, 46))
+print(rain_temp(False, 46))
 
 
 # if raining and temperature < 15:

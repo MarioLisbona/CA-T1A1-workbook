@@ -274,15 +274,44 @@ Write pseudocode OR Python code for the following problem:
 *You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”*.
 
 ```py
-if raining and temperature < 15:
-    print("\nIt's wet and cold")
-elif not raining and temperature < 15:
-    print("\nIt's not raining but cold")
-elif not raining and temperature >= 15:
-    print("\nIt's warm but not raining")
-else:
-    print("\nIt's warm and raining")
+def rain_temp(raining, temperature):
+    """
+    This functions prints out a different message depending on whether its raining or not and what the temperature is.
+
+    Args:
+        raining (Bool): true of false pool - whether its raining or not.
+        temperature (int): The temperature in degrees.
+    """    
+    if raining and temperature < 15:
+        print("\nIt's wet and cold")
+    elif not raining and temperature < 15:
+        print("\nIt's not raining but cold")
+    elif not raining and temperature >= 15:
+        print("\nIt's warm but not raining")
+    else:
+        print("\nIt's warm and raining")    
+
+rain_temp(True, 14)
+rain_temp(False, 14)
+rain_temp(False, 15)
+rain_temp(True, 46)
+rain_temp(False, 46)
 ```
+
+**Output**
+
+```
+It's wet and cold
+
+It's not raining but cold
+
+It's warm but not raining
+
+It's warm and raining
+
+It's warm but not raining
+```
+
 
 ## Question 16 - ACME Corporation - Coding Competency Application
 
