@@ -91,7 +91,7 @@ while len(candidate_skill_set) <= 7:
     print("=================================================================================================\n")
 
     #prompting user to enter a skill. lower() at the end to converts user input to lowercase
-    candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaSCript**\n\tPlease enter a choice from the skills above (C to (C)omplete application) >>  ").lower()
+    candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaScript**\n\tPlease enter a choice from the skills above (C to (C)omplete application) >>  ").lower()
 
     #using get() - scan candidate_skill_set for the user input. get() will return none (false) if the user input has already been entered (is already a key in the dictionary)
     #if the skill entered is not a key in the candidate_skill_set dict
