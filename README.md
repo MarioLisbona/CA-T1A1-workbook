@@ -46,6 +46,12 @@
       - [**Match Case**](#match-case)
   - [Question 9 - Type Coercion and Type Conversion in Python](#question-9---type-coercion-and-type-conversion-in-python)
   - [Question 10 - Data Types](#question-10---data-types)
+    - [**Numeric Types**](#numeric-types)
+      - [integer](#integer)
+      - [floating point numbers](#floating-point-numbers)
+      - [complex numbers](#complex-numbers)
+    - [**Text Types**](#text-types)
+      - [Strings](#strings)
   - [Question 11 - Classes](#question-11---classes)
   - [Question 12 - Find the error in a Code Snippet](#question-12---find-the-error-in-a-code-snippet)
   - [Question 13 - Rewrite a Code Snippet to swap two adjacent elements in an list](#question-13---rewrite-a-code-snippet-to-swap-two-adjacent-elements-in-an-list)
@@ -348,13 +354,14 @@ The python statement, while, uses repetition to continually execute a line or bl
         counter += 1
 ```
 Output:
-```
+```py
       0
       1
       2
       3
       4
 ```
+
 After 4 is printed, the loop tests the condition again and this time it fails so the code is no longer executed.
   (O’Reilly Media) - [^38]
   
@@ -367,13 +374,16 @@ The `for` loop works by first defining an iterable that you want to loop through
 
 
 In the example below the print statement will be executed on each loop and display the new value for cheese, which will change on each iteration.
+
 ```py
   cheese_list = ['Parmigiano', 'Pecorino', 'Bocconcini', 'Treccia']
   for cheese in cheese_list:
       print(cheese)
 ```
+
 Output:
-```
+
+```py
   Parmigiano
   Pecorino
   Bocconcini
@@ -411,7 +421,7 @@ Python uses type conversion in two different ways:
   - Where a user manually forces a data type to change using built in functions
 
 Below is an example in Python that looks like type coercion but is in fact implicit type conversion
-```
+```py
 >>> a = 2
 >>> b = 5.5
 >>> c = a + b
@@ -422,20 +432,23 @@ In this example the result `c` is a float. Python has not used type coercion to 
 It has instead delegated the the responsibility of performing the calculation to both the integer(a) and float(b)    
 
 When Python see’s the addition symbol + it calls the `__add__` method on the left side of the equation and passes the right side of the equation as an argument. So in our example above, the `__add__` method is called on `a` and `b` is passed as an argument. The result is:
-```
+
+```py
 >>> a.__add__(b)
 NotImplemented
 ```
 
 `NotImplemented` is a special return value in Python. When the interpreter sees this value it makes an attempt to reverse the way the calculation was previously done and asks `b` if it can add `a` to itself for a result. To perform this python calls the `__radd__` method. The `r` in `__radd_` stands for right hand side. So the equation that is attempted will be:
-```
+
+```py
 >>> b.__radd__(a)
 7.5
 ```
 So even though this looks like type coercion, it is actually python checking if one object knows how to work with the other. And in this case, b knows how to add a to itself, so a calculation is possible.    
 
 If we look at a similar example with strings it shows how type coercion does not happen in Python.
-```
+
+```py
 >>> string = "Mario"
 >>> int = 10
 >>> string + int
@@ -443,18 +456,117 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "int") to str
 ```
+
 In languages that use type coercion there would be no error and the resulting string would be `“Mario10”`. This is because ‘under the hood’ the language would coerce `int` to a string and concatenate it to the `string` variable.
 In Python this results in an error because it doesn't know how to use the addition operator with an `int` and a `string`.
 To make the above example work we would need to use explicit type conversion to convert the `int` to a `string`.
 We would do that with the following code:
-```
+
+```py
 >>> string + str(int)
 'Mario10'
 ```
 (Python Moresels) [^44]
+
 ## Question 10 - Data Types
 
 Explain data types, using examples
+
+There are numerous ways that data can be stored in variables in Python. Data types are a way to categorise and organise the different structures that store information in Python. Below is a list of the most common structures
+
+### **Numeric Types**
+
+#### integer
+
+An integer represents a positive or negative whole number (no decimal places). To creat an integer variable we simply assign a whole number to a variable name.
+
+```py
+age = 42
+```
+
+When creating a variable in this way `42` is referred to as an **integer literal** because we have literally typed into the code.
+
+When using larger whole numbers, python does not allow commas `,` to group numbers into three's as it typically done. However, Python does allow you to use underscores `_` to group numbers together for ease of reading. The two examples below are both valid examples of represening and integer with a valie of 10 million.
+```py
+>>> 10000000
+10000000
+>>> 10_000_000
+10000000
+```
+
+There is no limit of how large an integer can be in Python.  (RealPython) - [^45]
+
+#### floating point numbers
+
+Floating point numbers or floats, are used for numbers that have decimal points. Floating point literals can be created the same way as integers. There is one extra way a floating point number can be assigned to a variable in python, using the E notation. All 3 ways to create a floating point literal are shown below.
+```py
+10000000.0
+>>> 10_000_000.0
+10000000.0
+>>> 1e7
+10000000.0
+>>>
+```
+In the same way that 0.3 is only an approximation of 1/3 and that 0.33 and 0.333 are both closer and closer approximations of the original fraction, python's base 2 approximation of a floating point base 10 number will never be exact. Python only ever prints a decimal approximation of true  decimal value of the binary approximation stored in memory. If python gave every user the true decmial value of the binary approximation for 1/10 or 0.1, it would look like this:
+```py
+>>> 0.1
+0.1000000000000000055511151231257827021181583404541015625
+```
+This is too many numbes for anyone to need or to find useful so Python displays a rounded number instead.
+```py
+>>> 1 / 10
+0.1
+```
+So even though this looks like an exact number, know that the actual value stored is the nearest binary representation on that number. (Python org) [^46]
+
+
+
+#### complex numbers
+
+One of pythons strengths is its handling of numbers and math in the domains of scientific computing and computer graphics. Python has a data type that handle complex numbers that are often used in precalculus and higher-level algebra. A complex numbers has two parts, a **real** part and an **imaginary** part. To create a complex number we seperate the real and imaginary parts of the complex number with a plus and a traling j, like below.
+
+```py
+>>> n = 1 + 2j
+```
+All arithmetic operations, except for floor division, that can be used on integers and floats can be used on complex numbers.
+
+### **Text Types**
+
+#### Strings
+
+Strings are immutable (unchangeable) sequences of Unicode characters. String literals can be created in 3 different ways. For example:
+
+  - Single quotes: 'Outer single quotes allows for embedded "double" quotes'
+  - Double quotes: "Outer double quotes allows for embedded 'single' quotes"
+  - Triple quoted: '''Three single quotes''', """Three double quotes""" (Python org) [^47]
+
+strings are a squence of ordered characters starting with a zero index. Each character in the sequence can be accessed by its index number. Python supports negative indexing as shows below:
+
+```py
+>>> name = 'Mario Lisbona'
+>>> name
+'Mario Lisbona'
+>>> name[0]
+'M'
+>>> name[3]
+'i'
+>>> name [-1]
+'a'
+```
+
+As i have mentioed, string are immutable so none of the elements in the sequence are able to be changed.
+
+```py
+>>> name = 'Mario Lisbona'
+>>> name
+'Mario Lisbona'
+>>> name[0]
+'M'
+>>> name[6] = 'l'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+```
 
 ## Question 11 - Classes
 
@@ -639,7 +751,9 @@ Write a program that allows a user to input their skills and then tells them :
 - [^42 For loop in Python](#for-loop) - https://docs.python.org/3/reference/compound_stmts.html#the-for-statement
 - [^43 Match Case in Python](#match-case) - https://learnpython.com/blog/python-match-case-statement/
 - [^44 Type coercion and Type Conversion in Python](#question-9---type-coercion-and-type-conversion-in-python) - https://www.pythonmorsels.com/type-coercion/#:~:text=Many%20programming%20languages%20have%20something,does%20not%20have%20type%20coercion.
-
+- [^45 - Integers](#integer) - https://realpython.com/python-numbers/
+- [^46 - Floating point numbers](#floating-point-numbers) - https://realpython.com/python-numbers/
+- [^47 - Strings](#strings) - https://docs.python.org/3/library/stdtypes.html#str
 - 
 
 
