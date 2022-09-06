@@ -56,6 +56,8 @@
       - [bool](#bool)
     - [**Sequnce Type**](#sequnce-type)
       - [tuple](#tuple)
+    - [**None Type**](#none-type)
+      - [None](#none)
   - [Question 11 - Classes](#question-11---classes)
   - [Question 12 - Find the error in a Code Snippet](#question-12---find-the-error-in-a-code-snippet)
   - [Question 13 - Rewrite a Code Snippet to swap two adjacent elements in an list](#question-13---rewrite-a-code-snippet-to-swap-two-adjacent-elements-in-an-list)
@@ -604,6 +606,61 @@ False
 #### tuple
 
 Tuples are similar to lists in that they are a sequence of ordered data however they differ because of the fact that tuples are immutable, they cannot be changed. Tuples are indexed and the elements are accessed in a similar way to a list but rather use () instead of [] with the index number. (Tutorialspoint) [^49]
+
+Tuples are also created in a similar way to lists but use () instead of [] and accessing the elements is the same as list Below are examples of creating and accessing tuples.
+
+```py
+>>> tuple_1 = ('Nissan', 'Toyota', 2010, 2022)
+>>> tuple_2 = (1, 2, 3, 4, 5)
+>>> tuple_1[1]
+'Toyota'
+>>> tuple_2[4]
+5
+```
+The example belows demostrates that tuple are an immutable dta type:
+
+```py
+>>> tuple_1 = ('Nissan', 'Toyota', 2010, 2022)
+>>> tuple_2 = (1, 2, 3, 4, 5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
+
+However tuples can be added together to creat new tuples:
+
+```py
+>>> tuple_1 = ('Nissan', 'Toyota', 2010, 2022)
+>>> tuple_2 = (1, 2, 3, 4, 5)
+>>> tuple_3 = tuple_1 + tuple_2
+>>> tuple_3
+('Nissan', 'Toyota', 2010, 2022, 1, 2, 3, 4, 5)
+```
+
+Although tuples are very similar to lists they are the prefered data type if you know that your data will not change over time. When comaring a list and a tuple that contain exactly the same data, a tuple will require less memory that a list. This may make it a better option if memory use is a major factor in design. (Erdem Isbilen) [^50] See example below that shows a tuple taking up less memory than a list.
+
+```py
+>>> import sys
+>>> example_tuple = ('Mario', 'Lisbona', 42, 1979, 'Male')
+>>> example_list = ['Mario', 'Lisbona', 42, 1979, 'Male']
+>>> print(sys.getsizeof(example_tuple))
+80
+>>> print(sys.getsizeof(example_list))
+104
+```
+
+Tulpes also have slightly faster access times that lists. This may also be a consideration when choosing between a ist and a tuple for storing ordered data.
+
+### **None Type**
+
+#### None
+
+Python uses the keyword `None` to define null or empty obejcts are variables. It does all the same things that `Null` does in other languages though its used entirely differntly in Python.`None` is not defined as zero or any other value, in Python `None` is an object and treated as a first class citizen.
+
+None is the value that is returned by all functions when there is no return statement:
+
+
+
 ## Question 11 - Classes
 
 Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
@@ -792,7 +849,7 @@ Write a program that allows a user to input their skills and then tells them :
 - [^47 - Strings](#strings) - https://docs.python.org/3/library/stdtypes.html#str
 - [^48 - Boolean Type](#bool) - https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/#:~:text=Falsy%20values%20are%20values%20that,type%2C%20None%20%2C%20and%20False%20.
 - [^49 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
-- 
+- [^50 - tuple](#tuple) - - [^49 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
 
 
 
