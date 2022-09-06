@@ -47,11 +47,15 @@
   - [Question 9 - Type Coercion and Type Conversion in Python](#question-9---type-coercion-and-type-conversion-in-python)
   - [Question 10 - Data Types](#question-10---data-types)
     - [**Numeric Types**](#numeric-types)
-      - [integer](#integer)
-      - [floating point numbers](#floating-point-numbers)
-      - [complex numbers](#complex-numbers)
-    - [**Text Types**](#text-types)
-      - [Strings](#strings)
+      - [int](#int)
+      - [float](#float)
+      - [complex](#complex)
+    - [**Text Type**](#text-type)
+      - [str](#str)
+    - [**Boolean Type**](#boolean-type)
+      - [bool](#bool)
+    - [**Sequnce Type**](#sequnce-type)
+      - [tuple](#tuple)
   - [Question 11 - Classes](#question-11---classes)
   - [Question 12 - Find the error in a Code Snippet](#question-12---find-the-error-in-a-code-snippet)
   - [Question 13 - Rewrite a Code Snippet to swap two adjacent elements in an list](#question-13---rewrite-a-code-snippet-to-swap-two-adjacent-elements-in-an-list)
@@ -476,7 +480,7 @@ There are numerous ways that data can be stored in variables in Python. Data typ
 
 ### **Numeric Types**
 
-#### integer
+#### int
 
 An integer represents a positive or negative whole number (no decimal places). To creat an integer variable we simply assign a whole number to a variable name.
 
@@ -496,7 +500,7 @@ When using larger whole numbers, python does not allow commas `,` to group numbe
 
 There is no limit of how large an integer can be in Python.  (RealPython) - [^45]
 
-#### floating point numbers
+#### float
 
 Floating point numbers or floats, are used for numbers that have decimal points. Floating point literals can be created the same way as integers. There is one extra way a floating point number can be assigned to a variable in python, using the E notation. All 3 ways to create a floating point literal are shown below.
 ```py
@@ -521,7 +525,7 @@ So even though this looks like an exact number, know that the actual value store
 
 
 
-#### complex numbers
+#### complex
 
 One of pythons strengths is its handling of numbers and math in the domains of scientific computing and computer graphics. Python has a data type that handle complex numbers that are often used in precalculus and higher-level algebra. A complex numbers has two parts, a **real** part and an **imaginary** part. To create a complex number we seperate the real and imaginary parts of the complex number with a plus and a traling j, like below.
 
@@ -530,9 +534,9 @@ One of pythons strengths is its handling of numbers and math in the domains of s
 ```
 All arithmetic operations, except for floor division, that can be used on integers and floats can be used on complex numbers.
 
-### **Text Types**
+### **Text Type**
 
-#### Strings
+#### str
 
 Strings are immutable (unchangeable) sequences of Unicode characters. String literals can be created in 3 different ways. For example:
 
@@ -568,6 +572,38 @@ Traceback (most recent call last):
 TypeError: 'str' object does not support item assignment
 ```
 
+### **Boolean Type**
+
+#### bool
+
+Python 3 has a Boolean data type. Objects that are of a Boolean type can be either True or False.
+Python expressions are often evaluated in a Boolean context. This gives rise to the expressions of "truthy" and "falsey". Obviously the boolean expressions True and False represent theie counterparts of truthy and falsey but non-boolean objects can also be expressed as being truthy or falsey.
+
+Boolean aer considered numeric in Python. As such, they can be used for arithmetic oepations and can be compared to numbers. This is where truthy and falsey come into play for non boolean objects. Any non-zero object will be considered truthy. And any zero object, empty sequence or collection or None objects will be considered falsey. (FreeCodeCamp) [^48]
+
+```py
+>>> list_a = []
+>>> list_b = [1,2,3,4,5]
+>>> bool(list_a)
+False
+>>> bool(list_b)
+True
+
+>>> str_a = ''
+>>> str_b = "Im a string"
+>>> bool(str_a)
+False
+>>> bool(str_b)
+True
+>>> bool(None)
+False
+```
+
+### **Sequnce Type**
+
+#### tuple
+
+Tuples are similar to lists in that they are a sequence of ordered data however they differ because of the fact that tuples are immutable, they cannot be changed. Tuples are indexed and the elements are accessed in a similar way to a list but rather use () instead of [] with the index number. (Tutorialspoint) [^49]
 ## Question 11 - Classes
 
 Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
@@ -754,6 +790,8 @@ Write a program that allows a user to input their skills and then tells them :
 - [^45 - Integers](#integer) - https://realpython.com/python-numbers/
 - [^46 - Floating point numbers](#floating-point-numbers) - https://realpython.com/python-numbers/
 - [^47 - Strings](#strings) - https://docs.python.org/3/library/stdtypes.html#str
+- [^48 - Boolean Type](#bool) - https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/#:~:text=Falsy%20values%20are%20values%20that,type%2C%20None%20%2C%20and%20False%20.
+- [^49 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
 - 
 
 
