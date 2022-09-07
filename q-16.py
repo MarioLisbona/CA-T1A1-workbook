@@ -15,7 +15,7 @@ def user_prompt():
     print("|\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaScript**\t|\n|\t\t\t\t\t\t\t\t\t\t\t\t|")
     print("|===============================================================================================|")
 
-# prompt user to press any key to contine - program execution is fronzen until a key press happens
+# function to prompt user to press any key to contine - program execution is fronzen until a key press happens
 def press_to_continue():
     """
     This function freezes the program execution and prints a press any key to continue message.
@@ -29,7 +29,7 @@ def press_to_continue():
 def format_string(k):
     """
     This function will return a formatted string.
-    It capitalises all keys except for: uppercase for html, tdd and css, Uppercase s and j for javascript
+    It capitalises all arguments except for: uppercase for html, tdd and css, Uppercase letters s and j for javascript
 
     Args:
         k (string): Key for the current iteration of dictionary
@@ -66,15 +66,17 @@ full_skill_set = {
 #dictionary to hold appplicants skill set
 candidate_skill_set = {}
 
-#calling userprompt for first time with no skillset listes - just insctructions
+#calling userprompt for first time with no skillset listed - just insctructions
 user_prompt()
 
 #wait for keypress,
 press_to_continue()
 
-#There are 8 skills. While loop will be true for 7th skill entered, when the 8th skill(last one) is entered this loop will run, return to the condition and it will fail so the while loop will exit at the end of the 8th iteration
+#There are 8 skills. While loop will be true for 7th skill entered, when the 8th skill(last one) is entered this loop will run, return to the condition and it will fail
+#the while loop will exit at the end of the 8th iteration
 while len(candidate_skill_set) <= 7:
-    # display user prompt each time - this creates the effect of the user prompt never leaving, when in fact the screen is being cleared at the beginning of every user_prompt function call
+    # display user prompt each time - this creates the effect of the user prompt never leaving
+    # when in fact the screen is being cleared at the beginning of every user_prompt function call
     user_prompt()
 
     #if the dictionary candidate_skill_set has items, print only the keys
@@ -93,11 +95,12 @@ while len(candidate_skill_set) <= 7:
     #prompting user to enter a skill. lower() at the end to converts user input to lowercase
     candidate_skill_entered = input("\t**Python**  **Ruby**  **Bash**  **Git**  **HTML**  **TDD**  **CSS**  **JavaScript**\n\tPlease enter a choice from the skills above (C to (C)omplete application) >>  ").lower()
 
-    #using get() - scan candidate_skill_set for the user input. get() will return none (false) if the user input has already been entered (is already a key in the dictionary)
+    #using get() - scan candidate_skill_set for the user input.
+    # get() will True if the user input has already been entered (is already a key in the candidate_skill_set dict)
     #if the skill entered is not a key in the candidate_skill_set dict
     #then iterate over the full_skill_set dictionary and return the key and value on each iteration using items() method
-    #if the current key equals the user input create a new key value pair with the current key and value with line 104: candidate_skill_set[key] = value
-    #line 105 will take the current value and increment candidate_total_skill_score by that value
+    #if the current key equals the user input create a new key value pair with the current key and value with line 107: candidate_skill_set[key] = value
+    #line 108 will take the current value and increment candidate_total_skill_score by that value
     if not candidate_skill_set.get(candidate_skill_entered):
         for key, value in full_skill_set.items():
             if key == candidate_skill_entered:
@@ -129,9 +132,7 @@ os.system('cls||clear')
 print("====================================================================================================\n")
 print("\tThankyou for applying for the junior developer role.\n")
 
-#iterate over the keys in candidate_skill_set and print each one to the screen
-
-#iterate over candidate_skill_set dictionary 
+#iterate over keys in candidate_skill_set dictionary
 #Pass key as argument to format_string function to format each key accordingly
 for key in candidate_skill_set:
     print("\tSkill Recorded  \u2713", format_string(key))
@@ -145,6 +146,11 @@ if len(candidate_skill_set) == 8:
     print("\n\tCongratulations! You got the job, you're the perfect candidate!")
 else:
     print("\n\tBelow is a list of skills that will improve your score:\n")
+
+#iterate over key and value in full skillset. If current key is not in candidate_skill_set
+#then print skill and points to screen.
+
+#if else here is to to print the singular 'point' for pythons. The rest of the skils use the plural 'points'
 for key, value in full_skill_set.items():
     if not key in candidate_skill_set:
         if key == "python":

@@ -63,6 +63,8 @@
   - [**Q12 - Find the error in a Code Snippet**](#q12---find-the-error-in-a-code-snippet)
   - [**Q13 - Rewrite a Code Snippet to swap two adjacent elements in an list**](#q13---rewrite-a-code-snippet-to-swap-two-adjacent-elements-in-an-list)
   - [**Q14 - Algorithmic Thinking**](#q14---algorithmic-thinking)
+    - [**Flow chart - Primer numbers between 1 - 100**](#flow-chart---primer-numbers-between-1---100)
+    - [**Pseudocode - Primer numbers between 1 - 100**](#pseudocode---primer-numbers-between-1---100)
   - [Q15 - Python code using comparison and logical operators](#q15---python-code-using-comparison-and-logical-operators)
   - [**Q16 - ACME Corporation - Coding Competency Application**](#q16---acme-corporation---coding-competency-application)
   - [**References**](#references)
@@ -801,6 +803,32 @@ Demonstrate your algorithmic thinking through completing the following two tasks
 1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
 2. Write pseudocode for the process outlined in your flowchart
 
+
+
+### **Flow chart - Primer numbers between 1 - 100**
+
+<br>
+
+<img src="./docs/workbook-q-14-flowchart.png" width="600" alt="Q-13 Code Snippet">
+
+<br>
+
+### **Pseudocode - Primer numbers between 1 - 100**
+
+```py
+#start loop, with variable *number* , from range of 1 and 101 (end of range is exclusive):
+    #if *number* is greater than 1: (1 isnt a prime number)
+        #start another loop with variable *x*, from range of 2 to *number*: 
+        # (this loop will always finish 1 before *number* because we are using range)
+        # (so if *number* is divisible, with no remainder, by any number before its self then it cant be a prime)
+            #if *number* is divisible by *x* with no remainder:
+                #not a prime number, break out of inner loop
+        #else:
+            #number was not divisible by any number between 2 and its self - 1, so its a prime.
+            #Print Prime number
+```
+
+
 ## Q15 - Python code using comparison and logical operators
 
 Write pseudocode OR Python code for the following problem:
@@ -901,7 +929,7 @@ Write a program that allows a user to input their skills and then tells them :
 - [^30 Data Structures: Set](#set) - Stack overflow [*In Python, when to use a Dictionary, List or Set?*](https://stackoverflow.com/questions/3489071/in-python-when-to-use-a-dictionary-list-or-set), Stack overflow website, accessed 1 September 2022.
 - [^31 Interpreters and Compilers](#q5---interpreters-and-compilers) - Programiz [**Interpreter Vs Compiler : Differences Between Interpreter and Compiler](https://www.programiz.com/article/difference-compiler-interpreter), Programiz website, accessed 1 September 2022.
 - [^32 Python pros / cons](#python---drawbacks) - Data Flair [*Advantages and Disadvantages of Python – How it is dominating Programming World*](https://data-flair.training/blogs/advantages-and-disadvantages-of-python/), Data Flair website, accessed 1 September 2022.
-- [^33 Python pros / cons](#python---drawbacks) - Real Python [**Dynamic vs Static](https://realpython.com/lessons/dynamic-vs-static/), Real Python website, accessed 1 September 2022.
+- [^33 Python pros / cons](#python---drawbacks) - Real Python [*Dynamic vs Static*](https://realpython.com/lessons/dynamic-vs-static/), Real Python website, accessed 1 September 2022.
 - [^34 JavaScript pros / cons](#javascript---drawbacks) - FreeCodeCamp [The Advantages and Disadvantages of JavaScript](https://www.freecodecamp.org/news/the-advantages-and-disadvantages-of-javascript/), FreeCodeCamp website, accessed 2 September 2022.
 - [^35 Control Flow in Python](#question-8---control-flow-in-python) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 2 September 2022.
 - [^36 Sequential Control Flow in Python](#sequential-control-flow) - Buchiredddypalli Koushik [*What are control flow statements in Python?*](https://www.educative.io/answers/what-are-control-flow-statements-in-python), Educative Website, accessed  3 September 2022.
