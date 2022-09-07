@@ -4,13 +4,13 @@
 
 - [**Coder Academy - Assignment T1A1 - Workbook: Submitted by Mario Lisbona**](#coder-academy---assignment-t1a1---workbook-submitted-by-mario-lisbona)
 - [**Table of contents**](#table-of-contents)
-  - [Question 1 - Web Development Markup Laguages](#question-1---web-development-markup-laguages)
+  - [**Q1 - Web Development Markup Laguages**](#q1---web-development-markup-laguages)
     - [**Tags**](#tags)
     - [**Elements**](#elements)
     - [**Presentational Markup**](#presentational-markup)
     - [**Procedural Markup**](#procedural-markup)
     - [**Descriptive Markup / Semantic Markup**](#descriptive-markup--semantic-markup)
-  - [Question 2 - Internet Technologies: Packets, IP, Routers and DNS](#question-2---internet-technologies-packets-ip-routers-and-dns)
+  - [**Q2 - Internet Technologies: Packets, IP, Routers and DNS**](#q2---internet-technologies-packets-ip-routers-and-dns)
     - [Definition - **Packets**](#definition---packets)
     - [Definition - **IP addresses (IPv4 and IPv6)**](#definition---ip-addresses-ipv4-and-ipv6)
     - [Definition - **Routers and Routing**](#definition---routers-and-routing)
@@ -19,33 +19,33 @@
     - [Explanation - **IP addresses (IPv4 and IPv6)**](#explanation---ip-addresses-ipv4-and-ipv6)
     - [Explanation - **Routers and Routing**](#explanation---routers-and-routing)
     - [Explanation - **Domains and DNS**](#explanation---domains-and-dns)
-  - [Question 3 - Internet Technologies: TCP, HTTP/HTTPS and Web Browsers](#question-3---internet-technologies-tcp-httphttps-and-web-browsers)
+  - [**Q3 - Internet Technologies: TCP, HTTP/HTTPS and Web Browsers**](#q3---internet-technologies-tcp-httphttps-and-web-browsers)
     - [Definition - **TCP**](#definition---tcp)
     - [Definition - **HTTP and HTTPS**](#definition---http-and-https)
     - [Definition - **Web Browsers (requests, rendering and developer tools)**](#definition---web-browsers-requests-rendering-and-developer-tools)
     - [Explanation - **TCP**](#explanation---tcp)
     - [Explanation - **HTTP and HTTPS**](#explanation---http-and-https)
     - [Explanation - **Web Browsers (requests, rendering and developer tools)**](#explanation---web-browsers-requests-rendering-and-developer-tools)
-  - [Question 4 - Python Data Structures](#question-4---python-data-structures)
+  - [**Q4 - Python Data Structures**](#q4---python-data-structures)
     - [**Dictionary**](#dictionary)
     - [**List**](#list)
     - [**Set**](#set)
-  - [Question 5 - Interpreters and Compilers](#question-5---interpreters-and-compilers)
-  - [Question 6 - Pros / Cons of Python and JavaScript](#question-6---pros--cons-of-python-and-javascript)
+  - [**Q5 - Interpreters and Compilers**](#q5---interpreters-and-compilers)
+  - [**Q6 - Pros / Cons of Python and JavaScript**](#q6---pros--cons-of-python-and-javascript)
     - [**Python - Benefits**](#python---benefits)
     - [**Python - Drawbacks**](#python---drawbacks)
     - [**JavaScript - Benefits**](#javascript---benefits)
     - [**JavaScript - Drawbacks**](#javascript---drawbacks)
-  - [Question 7 - Ethics and Tech](#question-7---ethics-and-tech)
-  - [Question 8 - Control Flow in Python](#question-8---control-flow-in-python)
+  - [**Q7 - Ethics and Tech**](#q7---ethics-and-tech)
+  - [**Q8 - Control Flow in Python**](#q8---control-flow-in-python)
     - [**Sequential control flow**](#sequential-control-flow)
     - [**Selection control flow**](#selection-control-flow)
     - [**Repetition control flow**](#repetition-control-flow)
       - [**While loop**](#while-loop)
       - [**For loop**](#for-loop)
       - [**Match Case**](#match-case)
-  - [Question 9 - Type Coercion and Type Conversion in Python](#question-9---type-coercion-and-type-conversion-in-python)
-  - [Question 10 - Data Types](#question-10---data-types)
+  - [**Q9 - Type Coercion and Type Conversion in Python**](#q9---type-coercion-and-type-conversion-in-python)
+  - [**Q10 - Data Types**](#q10---data-types)
     - [**Numeric Types**](#numeric-types)
       - [int](#int)
       - [float](#float)
@@ -58,15 +58,15 @@
       - [tuple](#tuple)
     - [**None Type**](#none-type)
       - [None](#none)
-  - [Question 11 - Classes](#question-11---classes)
-  - [Question 12 - Find the error in a Code Snippet](#question-12---find-the-error-in-a-code-snippet)
-  - [Question 13 - Rewrite a Code Snippet to swap two adjacent elements in an list](#question-13---rewrite-a-code-snippet-to-swap-two-adjacent-elements-in-an-list)
-  - [Question 14 - Algorithmic Thinking](#question-14---algorithmic-thinking)
-  - [Question 15 - Python code using comparison and logical operators](#question-15---python-code-using-comparison-and-logical-operators)
-  - [Question 16 - ACME Corporation - Coding Competency Application](#question-16---acme-corporation---coding-competency-application)
+  - [**Q11 - Classes**](#q11---classes)
+  - [**Q12 - Find the error in a Code Snippet**](#q12---find-the-error-in-a-code-snippet)
+  - [**Q13 - Rewrite a Code Snippet to swap two adjacent elements in an list**](#q13---rewrite-a-code-snippet-to-swap-two-adjacent-elements-in-an-list)
+  - [**Q14 - Algorithmic Thinking**](#q14---algorithmic-thinking)
+  - [Q15 - Python code using comparison and logical operators](#q15---python-code-using-comparison-and-logical-operators)
+  - [**Q16 - ACME Corporation - Coding Competency Application**](#q16---acme-corporation---coding-competency-application)
   - [**References**](#references)
 
-## Question 1 - Web Development Markup Laguages
+## **Q1 - Web Development Markup Laguages**
 
 **Identify** and **explain** common and important components and concepts of web development markup languages   
 
@@ -90,7 +90,7 @@
   
   This type of markup is used to convey the type of content that is being wrapped by a tag. It helps to convey the purpose of the text being presented.(Erika Varagouli 2021) [^5] Its purpose is to label parts of a document based on what the content is rather than how that content should be presented. (Wikipedia) [^6]
 
-## Question 2 - Internet Technologies: Packets, IP, Routers and DNS
+## **Q2 - Internet Technologies: Packets, IP, Routers and DNS**
 
 **Define** the features of the following technologies that are essential in terms of the development of the internet:
 
@@ -128,7 +128,7 @@
   
   With an ever increasing number of web servers on the internet, domains and DNS allowed users to access websites with easy to remember groups of words rather than random numbers separated by full stops. This is facilitated by a type of server called a  DNS server. This is a server that will translate the human readable domain name that is entered by the user into its associated computer readable IP address and will direct the user to the correct web server. Amazon) [^14]
 
-## Question 3 - Internet Technologies: TCP, HTTP/HTTPS and Web Browsers
+## **Q3 - Internet Technologies: TCP, HTTP/HTTPS and Web Browsers**
 
 **Define** the features of the following technologies that are essential in terms of the development of the internet:
 
@@ -167,7 +167,7 @@ Developer tools are software add-ons that are included with a browser to allow w
   
   Browsers also have addons called developer tools. These have increased developers productivity by allowing them to directly view a website and edit the code locally to see immediately what changes would result from changing the code whether that be the CSS, HTML or JavaScript. Some other tools that assist developers are the ability to access web-page assets and network usage information such as the bandwidth used to load a page and what headers are being sent and received by the browser. JavaScript debugging within a developer tool suite is also commonly used. (Wikipedia) [^24]
 
-## Question 4 - Python Data Structures
+## **Q4 - Python Data Structures**
 
 **Identify** THREE data structures used in the Python programming language and **explain** the reasons for using each.
 
@@ -194,7 +194,7 @@ Python sets are a data structure similar to a dictionary and a list but has its 
 - They are useful for removing duplicates from a series of values
 - Sets support mathematical operations being performed on their data. These include intersection, union, difference and symmetric difference. (Python.org) [^29] (Stack overflow) [^30]
 
-## Question 5 - Interpreters and Compilers
+## **Q5 - Interpreters and Compilers**
 
 **Describe** the features of *interpreters* and *compilers* and how they are different.
 
@@ -202,7 +202,7 @@ Interpreters and compilers both translate higher level programming languages, or
 A compiler will scan the whole program before it translates the source code, as a whole, into machine code. The analysis stage is much longer in duration than that of an interpreter but the overall execution time is faster than interpreters. Compilers require more memory because they create Object Code which requires linking. Common languages that use compilers are C, C++ and Java.
 An interpreter will translate a program line by line and will take less time to analyse the source code compared to a compiler. However, it will take more time overal to execute the process. It wont produce any Object Code, so has no need for linking like a compiler, so is more efficient with its memory use. Examples of languages that use interpreters are Python, JavaScript and Ruby. (Programiz) [^31]
 
-## Question 6 - Pros / Cons of Python and JavaScript
+## **Q6 - Pros / Cons of Python and JavaScript**
 
 **Identify** TWO commonly used programming languages and **explain** the benefits and drawbacks of each.
 
@@ -295,7 +295,7 @@ An interpreter will translate a program line by line and will take less time to 
 
 
 
-## Question 7 - Ethics and Tech
+## **Q7 - Ethics and Tech**
 
 **Identify** TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
 
@@ -311,7 +311,7 @@ For each ethical issue identify a source of legal information relating to the et
 
 Conduct **research** into a case study of **ONE** of the ethical issues you have chosen **discuss** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
 
-## Question 8 - Control Flow in Python
+## **Q8 - Control Flow in Python**
 
 Explain control flow, using examples from the Python programming language
 
@@ -414,7 +414,7 @@ In the example below, a variable `color` is defined and we use the keyword `matc
       print('Python is cool')
 ```
   
-## Question 9 - Type Coercion and Type Conversion in Python
+## **Q9 - Type Coercion and Type Conversion in Python**
 
 Explain the difference between type coercion and type conversion. Are either of these used in Python?
 
@@ -474,7 +474,7 @@ We would do that with the following code:
 ```
 (Python Moresels) [^44]
 
-## Question 10 - Data Types
+## **Q10 - Data Types**
 
 Explain data types, using examples
 
@@ -725,17 +725,13 @@ We can use `None` as the default argument. Once we are inside the function we ca
 
 As you can see this is the output we expected in the previous example. (Pythontutorial) [^52]
 
-
-
-
-
-## Question 11 - Classes
+## **Q11 - Classes**
 
 Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
 - Identify the classes you would use to solve the problem
 - Write a short explanation of why you would use the classes you have identified
 
-## Question 12 - Find the error in a Code Snippet
+## **Q12 - Find the error in a Code Snippet**
 
 Identify and explain the error in the code snippet below that is preventing correct execution of the program
 
@@ -751,7 +747,7 @@ This code results in a TypeError.
 In this code, on line 2, the input() function will return a string and assign it to the celsius variable. The error is occurring on line 3 where there is a math calculation being attempted on two data types that are unsupported - between a string and a number.
 
 
-## Question 13 - Rewrite a Code Snippet to swap two adjacent elements in an list
+## **Q13 - Rewrite a Code Snippet to swap two adjacent elements in an list**
 
 The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
 
@@ -794,13 +790,13 @@ New list         [5, 22, 29, 19, 39, 51, 78, 96, 84]
 ```
 
 
-## Question 14 - Algorithmic Thinking
+## **Q14 - Algorithmic Thinking**
 
 Demonstrate your algorithmic thinking through completing the following two tasks, in order:
 1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
 2. Write pseudocode for the process outlined in your flowchart
 
-## Question 15 - Python code using comparison and logical operators
+## Q15 - Python code using comparison and logical operators
 
 Write pseudocode OR Python code for the following problem:
 
@@ -846,7 +842,7 @@ It's warm but not raining
 ```
 
 
-## Question 16 - ACME Corporation - Coding Competency Application
+## **Q16 - ACME Corporation - Coding Competency Application**
 
 ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:
 - Python (1)
