@@ -37,6 +37,7 @@
     - [**JavaScript - Benefits**](#javascript---benefits)
     - [**JavaScript - Drawbacks**](#javascript---drawbacks)
   - [**Q7 - Ethics and Tech**](#q7---ethics-and-tech)
+    - [**access to a user’s personal information**](#access-to-a-users-personal-information)
   - [**Q8 - Control Flow in Python**](#q8---control-flow-in-python)
     - [**Sequential control flow**](#sequential-control-flow)
     - [**Selection control flow**](#selection-control-flow)
@@ -108,13 +109,13 @@
 
 ### Definition - **Domains and DNS**
   
-  IP addresses can be easily processed by a computer however they are quite difficult to remember for humans. The domain name is a name given to a web server that is connected to the internet. It is essentially an alias for the underlying IP address used to locate that particular web server. DNS stands for Domain Name System. DNS is similar to a registry or database where a web server's IP address is linked to its domain name. (Mozilla) [^10]
+  IP addresses can be easily processed by a computer however they are quite difficult to remember for humans. The domain name is a name given to a web server that is connected to the internet. It is essentially an alias for the underlying IP address used to locate that particular web server. DNS stands for Domain Name System. DNS is similar to a registry or database where a web server's IP address is linked to its domain name. (MDN) [^10]
 
 **Explain** how each technology has contributed to the development of the internet.
 
 ### Explanation - **Packets**
   
-  Packets contributed to the development of the internet by allowing larger chunks of data to be broken up at the server and sent in smaller packets to the user or client. This meant that multiple clients/users could be downloading data from a single website at the same time. This would not be possible if the website had to be downloaded in one large chunk. Having data in small packets rather than large files also makes it easier and more efficient to resend data that is corrupted or lost.(Mozilla) [^11]
+  Packets contributed to the development of the internet by allowing larger chunks of data to be broken up at the server and sent in smaller packets to the user or client. This meant that multiple clients/users could be downloading data from a single website at the same time. This would not be possible if the website had to be downloaded in one large chunk. Having data in small packets rather than large files also makes it easier and more efficient to resend data that is corrupted or lost.(MDN) [^11]
 
 ### Explanation - **IP addresses (IPv4 and IPv6)**
   
@@ -122,11 +123,11 @@
 
 ### Explanation - **Routers and Routing**
   
-  Routers are an intermediary device and create a network between the sender and the receiver. They will receive data, in the form of packets, from computer A and know which path to send that data so that it reaches its destination at computer B and not at computer C or D. Routers can also link to other routers and this fact allowed for the massive expansion of the internet. Creating a network of networks allows for a theoretical infinite amount of connections between devices on the internet.(Mozilla) [^13]
+  Routers are an intermediary device and create a network between the sender and the receiver. They will receive data, in the form of packets, from computer A and know which path to send that data so that it reaches its destination at computer B and not at computer C or D. Routers can also link to other routers and this fact allowed for the massive expansion of the internet. Creating a network of networks allows for a theoretical infinite amount of connections between devices on the internet.(MDN) [^13]
 
 ### Explanation - **Domains and DNS**
   
-  With an ever increasing number of web servers on the internet, domains and DNS allowed users to access websites with easy to remember groups of words rather than random numbers separated by full stops. This is facilitated by a type of server called a  DNS server. This is a server that will translate the human readable domain name that is entered by the user into its associated computer readable IP address and will direct the user to the correct web server. Amazon) [^14]
+  With an ever increasing number of web servers on the internet, domains and DNS allowed users to access websites with easy to remember groups of words rather than random numbers separated by full stops. This is facilitated by a type of server called a  DNS server. This is a server that will translate the human readable domain name that is entered by the user into its associated computer readable IP address and will direct the user to the correct web server. (Amazon) [^14]
 
 ## **Q3 - Internet Technologies: TCP, HTTP/HTTPS and Web Browsers**
 
@@ -134,17 +135,17 @@
 
 ### Definition - **TCP**
   
-  The Transmission Control Protocol facilitates the connection between two hosts to allow the guaranteed transmission of data and packets in the correct order to the receiver. (Mozilla) [^15] Its main features are connection control, reliability, flow control and congestion control.(Noction) [^16]
+  The Transmission Control Protocol facilitates the connection between two hosts to allow the guaranteed transmission of data and packets in the correct order to the receiver. (MDN) [^15] Its main features are connection control, reliability, flow control and congestion control.(Noction) [^16]
 
 ### Definition - **HTTP and HTTPS**
   
-  The main features of the Hypertext Transfer Protocol are the client and the server. Requests for information are sent by the client, normally a web browser, to the server. The server then answers the request by sending back information to the client. This is called a response. The client (almost) always is the side sending the request. And the server will then serve the document requested as a response to the client.(Mozilla) [^17]
+  The main features of the Hypertext Transfer Protocol are the client and the server. Requests for information are sent by the client, normally a web browser, to the server. The server then answers the request by sending back information to the client. This is called a response. The client (almost) always is the side sending the request. And the server will then serve the document requested as a response to the client.(MDN) [^17]
 Hypertext Transfer Protocol Secure (HTTPS) is the same as HTTP except that it has more security that is provided by an SSL certificate and the SSL protocol. SSL stands for Secure Sockets Layer. (Javatpoint) [^18]
 
 ### Definition - **Web Browsers (requests, rendering and developer tools)**
   
   A web browser is a piece of software that is used to view or access data on the internet. It sends requests to web servers for data and once it receives the response, it will render the information as a webpage on the user's device. (Wikipedia) [^19]
-Developer tools are software add-ons that are included with a browser to allow web developers to inspect, test and debug their code. They work with a few different web technologies including HTML, CSS and JavaScript. (Wikipedia) [^20]
+  Developer tools are software add-ons that are included with a browser to allow web developers to inspect, test and debug their code. They work with a few different web technologies including HTML, CSS and JavaScript. (Wikipedia) [^20]
 
 **Explain** how each technology has contributed to the development of client and server communication over the internet *(50 - 150 words for each technology)*.
 
@@ -177,14 +178,14 @@ Python dictionaries are collections of data that are stored with key/value pairs
 
 - If the data that needs to be stored has a unique reference for the key. An example might be a membership ID, telephone number or email address
 - If the order that the data is stored is not important
-- When timeliness is crucial in relation to accessing a particular element. Dictionaries are designed to allow fast access to particular data based on the unique key because it means the whole database does not need to be scanned to find the right element. (Erdem Isbilen) [^25]  (RealPython) [^26] 
+- When timeliness is crucial in relation to accessing a particular element. Dictionaries are designed to allow fast access to particular data based on the unique key because it means the whole database does not need to be scanned to find the right element. (Erdem Isbilen 2020) [^25]  (Dan Bader 2020) [^26] 
 
 ### **List**
   
 Python lists are implemented as mutable dynamic arrays. This means that Python lists allow elements to be added and removed. They can store any type of object in python. This makes them highly versatile and the most commonly used data structure in Python and are used for many reasons such as the ones below.
 
 - When a developer needs to store a collection of data that is heterogenous, that is to say when all the data types are different. Python lists can store simple data structures like integers or strings alongside more complex structures like tuples, dictionaries or other lists!
-- When the order of the data is important. The order the data is entered into the list is preserved in a list. (Erdem Isbilen) [^27] (RealPython) [^28]
+- When the order of the data is important. The order the data is entered into the list is preserved in a list. (Erdem Isbilen) [^27] (Dan Bader 2020) [^28]
 
 ### **Set**
   
@@ -307,6 +308,10 @@ List of topics containing ethical issues:
 - aggressive sales and marketing practices designed to mislead and deceive consumers
 - trading of shares on the stock exchange OR crypto-currencies
 
+### **access to a user’s personal information**
+
+
+
 For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way. *(Word count guide: 200 words max)*
 
 Conduct **research** into a case study of **ONE** of the ethical issues you have chosen **discuss** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
@@ -373,10 +378,10 @@ After 4 is printed, the loop tests the condition again and this time it fails so
   
 #### **For loop**
 
-The `for` loop uses repetition to allow you to execute a line of code many times by iterating (looping through) an iterable. (Career Karma) [^39] An iterable is any Python object that is “capable of returning its members one at a time, permitting it to be iterated over in a for-loop.” Examples of iterables include lists, tuples and strings. (Python like you mean it) [^40]
+The `for` loop uses repetition to allow you to execute a line of code many times by iterating (looping through) an iterable. (James Gallagher, 2020) [^39] An iterable is any Python object that is “capable of returning its members one at a time, permitting it to be iterated over in a for-loop.” Examples of iterables include lists, tuples and strings. (Ryan Soklaski 2021) [^40]
 
 
-The `for` loop works by first defining an iterable that you want to loop through. Then creating a variable to hold the value of the current element in the iterable that is being returned. Lastly the code that is to be performed on each loop, on the current value of the variable, is defined. This repetition will be continued until the end of the iterable has been reached.(Dataquest IO) [^41]
+The `for` loop works by first defining an iterable that you want to loop through. Then creating a variable to hold the value of the current element in the iterable that is being returned. Lastly the code that is to be performed on each loop, on the current value of the variable, is defined. This repetition will be continued until the end of the iterable has been reached.(Charlie Custer, 2019) [^41]
 
 
 In the example below the print statement will be executed on each loop and display the new value for cheese, which will change on each iteration.
@@ -402,7 +407,7 @@ If a `break` statement is encountered the loop terminates. However if a `continu
   
 `Match case` was introduced with the release of Python 3.10 The `match case` statement is similar but more powerful version of the `if/else` statement and allows for more complicated pattern matching while requiring less code.
 
-In the example below, a variable `color` is defined and we use the keyword `match` to associate it with cases defined after each keyword `case`. `other` is used in a similar manner to the `else` statement. It can also be written as `case _` (Learn Python) - [^43]
+In the example below, a variable `color` is defined and we use the keyword `match` to associate it with cases defined after each keyword `case`. `other` is used in a similar manner to the `else` statement. It can also be written as `case _` (Luke Hande (2022) - [^43]
 ```py
   color = 'red'
   match color:
@@ -472,7 +477,7 @@ We would do that with the following code:
 >>> string + str(int)
 'Mario10'
 ```
-(Python Moresels) [^44]
+(Trey Hunner) [^44]
 
 ## **Q10 - Data Types**
 
@@ -500,7 +505,7 @@ When using larger whole numbers, python does not allow commas `,` to group numbe
 10000000
 ```
 
-There is no limit of how large an integer can be in Python.  (RealPython) - [^45]
+There is no limit of how large an integer can be in Python.  (David Amos 2020) - [^45]
 
 #### float
 
@@ -523,7 +528,7 @@ This is too many numbes for anyone to need or to find useful so Python displays 
 >>> 1 / 10
 0.1
 ```
-So even though this looks like an exact number, know that the actual value stored is the nearest binary representation on that number. (Python org) [^46]
+So even though this looks like an exact number, know that the actual value stored is the nearest binary representation on that number. (David Amos 2020) [^46]
 
 
 
@@ -581,7 +586,7 @@ TypeError: 'str' object does not support item assignment
 Python 3 has a Boolean data type. Objects that are of a Boolean type can be either True or False.
 Python expressions are often evaluated in a Boolean context. This gives rise to the expressions of "truthy" and "falsey". Obviously the boolean expressions True and False represent theie counterparts of truthy and falsey but non-boolean objects can also be expressed as being truthy or falsey.
 
-Boolean aer considered numeric in Python. As such, they can be used for arithmetic oepations and can be compared to numbers. This is where truthy and falsey come into play for non boolean objects. Any non-zero object will be considered truthy. And any zero object, empty sequence or collection or None objects will be considered falsey. (FreeCodeCamp) [^48]
+Boolean aer considered numeric in Python. As such, they can be used for arithmetic oepations and can be compared to numbers. This is where truthy and falsey come into play for non boolean objects. Any non-zero object will be considered truthy. And any zero object, empty sequence or collection or None objects will be considered falsey. (Estefania Cassingena Navone 2020) [^48]
 
 ```py
 >>> list_a = []
@@ -668,7 +673,7 @@ None is the value that is returned by all functions when there is no return stat
 None
 ```
 
-We can see in the above example from the python REPL `func_with_no_return()` has no return statement so it returns None. This is not immedietly evident if we only call the function - nothing is printed to sreen. If we use `print()` to print then we see that `None` is in fact being returned. (RealPython) [^51]
+We can see in the above example from the python REPL `func_with_no_return()` has no return statement so it returns None. This is not immedietly evident if we only call the function - nothing is printed to sreen. If we use `print()` to print then we see that `None` is in fact being returned. (Wolf ​2020) [^51]
 
 None is so widely used in Python that unless it is explicitly asked to be printed, the Python REPL wont print `None`
 
@@ -864,58 +869,58 @@ Write a program that allows a user to input their skills and then tells them :
 
  ## **References**
 
-- [^1 - Tags](#tags) - https://www.semrush.com/blog/markup-language/
-- [^2 - Elements](#elements) - https://www.semrush.com/blog/markup-language/
-- [^3 - Presentational Markup](#presentational-markup) - https://en.wikipedia.org/wiki/Markup_language
-- [^4 - Procedural Markup](#procedural-markup) - https://en.wikipedia.org/wiki/Markup_language
-- [^5 - Descriptive Markup / Semantic Markup](#descriptive-markup--semantic-markup) - https://www.semrush.com/blog/markup-language/
-- [^6 - Descriptive Markup / Semantic Markup](#descriptive-markup--semantic-markup) - https://en.wikipedia.org/wiki/Markup_language
-- [^7 - Definition - Packets](#definition---packets) - https://en.wikipedia.org/wiki/Network_packet
-- [^8 - Definition - IP addresses (IPv4 and IPv6)](#definition---ip-addresses-ipv4-and-ipv6) - https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work
-- [^9 - Definition - Routers and Routing](#definition---routers-and-routing) - https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/what-is-a-router.html
-- [^10 - Definition - Domains and DNS](#definition---domains-and-dns) - https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name 
-- [^11 - Explanation - Packets](#explanation---packets) - https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#packets_explained
-- [^12 - Explanation - IP addresses (IPv4 and IPv6)](#explanation---ip-addresses-ipv4-and-ipv6) - https://en.wikipedia.org/wiki/IP_address
-- [^13 - Explanation - Routers and Routing)](#explanation---routers-and-routing) - https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work
-- [^14 - Explanation - Domains and DNS)](#explanation---domains-and-dns) - https://aws.amazon.com/route53/what-is-dns/
-- [^15 - TCP](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://developer.mozilla.org/en-US/docs/Glossary/TCP)
-- [^16 - TCP](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://www.noction.com/blog/tcp-transmission-control-protocol-congestion-control#:~:text=The%20main%20TCP%20features%20are,for%20creating%20multiple%20virtual%20connections.
-- [^17 - HTTP and HTTPS](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#basic_aspects_of_http
-- [^18 - HTTP and HTTPS](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://www.javatpoint.com/http-vs-https
-- [^19 - Web Browsers](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://en.wikipedia.org/wiki/Web_browser
-- [^20 - Web Browsers](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://en.wikipedia.org/wiki/Web_development_tools
-- [^21 - TCP](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Network_function
-- [^22 - HTTP and HTTPS](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_and_response_messages_through_connections
-- [^23 - Web Browsers](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://www.lifewire.com/web-browsers-and-web-servers-communicate-817764
-- [^24 - Web Browsers](#question-3---internet-technologies-tcp-httphttps-and-web-browsers) - https://en.wikipedia.org/wiki/Web_development_tools
-- [^25 Data Structures: Dictionary](#dictionary) - https://towardsdatascience.com/python-dictionaries-651acb069f94
-- [^26 Data Structures: Dictionary](#dictionary) - https://realpython.com/python-data-structures/#dictionaries-maps-and-hash-tables
-- [^27 Data Structures: List](#list) - https://towardsdatascience.com/a-complete-guide-to-python-lists-6b592c8d5707
-- [^28 Data Structures: List](#list) - https://realpython.com/python-data-structures/#list-mutable-dynamic-arrays
-- [^29 Data Structures: Set](#set) - https://docs.python.org/3/tutorial/datastructures.html#sets
-- [^30 Data Structures: Set](#set) - https://stackoverflow.com/questions/3489071/in-python-when-to-use-a-dictionary-list-or-set
-- [^31 Interpreters and Compilers](#question-5---interpreters-and-compilers) - https://www.programiz.com/article/difference-compiler-interpreter
-- [^32 Python pros / cons](#python---drawbacks) - https://data-flair.training/blogs/advantages-and-disadvantages-of-python/
-- [^33 Python pros / cons](#python---drawbacks) - https://realpython.com/lessons/dynamic-vs-static/
-- [^34 JavaScript pros / cons](#javascript---drawbacks) - https://www.freecodecamp.org/news/the-advantages-and-disadvantages-of-javascript/
-- [^35 Control Flow in Python](#question-8---control-flow-in-python) - https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html
-- [^36 Sequential Control Flow in Python](#sequential-control-flow) - https://www.educative.io/answers/what-are-control-flow-statements-in-python
-- [^37 Selection Control Flow in Python](#selection-control-flow) - https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html
-- [^38 While loop in Python](#while-loop) - https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html
-- [^39 For in Python](#for-loop) - https://careerkarma.com/blog/python-for-loop/
-- [^40 For loop in Python](#for-loop) - https://www.pythonlikeyoumeanit.com/Module2_EssentialsOfPython/Iterables.html 
-- [^41 For loop in Python](#for-loop) - https://www.dataquest.io/blog/python-for-loop-tutorial/ 
-- [^42 For loop in Python](#for-loop) - https://docs.python.org/3/reference/compound_stmts.html#the-for-statement
-- [^43 Match Case in Python](#match-case) - https://learnpython.com/blog/python-match-case-statement/
-- [^44 Type coercion and Type Conversion in Python](#question-9---type-coercion-and-type-conversion-in-python) - https://www.pythonmorsels.com/type-coercion/#:~:text=Many%20programming%20languages%20have%20something,does%20not%20have%20type%20coercion.
-- [^45 - Integers](#integer) - https://realpython.com/python-numbers/
-- [^46 - Floating point numbers](#floating-point-numbers) - https://realpython.com/python-numbers/
-- [^47 - Strings](#strings) - https://docs.python.org/3/library/stdtypes.html#str
-- [^48 - Boolean Type](#bool) - https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/#:~:text=Falsy%20values%20are%20values%20that,type%2C%20None%20%2C%20and%20False%20.
-- [^49 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
-- [^50 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
-- [^51 - None](#none) - https://realpython.com/null-in-python/
-- [^52 - None](#none) - https://www.pythontutorial.net/advanced-python/python-none/
+- [^1 - Tags](#tags) - Erika Varagouli (2021) [*What Each Markup Language Is Used For*](https://www.semrush.com/blog/markup-language/), Semrush website, accessed 25 August 2022.
+- [^2 - Elements](#elements) - Erika Varagouli (2021) [*What Each Markup Language Is Used For*](https://www.semrush.com/blog/markup-language/), Semrush website, accessed  25 August 2022.
+- [^3 - Presentational Markup](#presentational-markup) - Wikipedia [*Markup language*](https://en.wikipedia.org/wiki/Markup_language), Wikipedia website, accessed 25 August 2022.
+- [^4 - Procedural Markup](#procedural-markup) - Wikipedia [*Markup language*](https://en.wikipedia.org/wiki/Markup_language), Wikipedia website, accessed 25 August 2022.
+- [^5 - Descriptive Markup / Semantic Markup](#descriptive-markup--semantic-markup) - Semrush [*What Each Markup Language Is Used For*](https://www.semrush.com/blog/markup-language/), Semrush website, accessed  25 August 2022.
+- [^6 - Descriptive Markup / Semantic Markup](#descriptive-markup--semantic-markup) - Semrush [*What Each Markup Language Is Used For*](https://www.semrush.com/blog/markup-language/), Semrush website, accessed  25 August 2022.
+- [^7 - Definition - Packets](#definition---packets) - Wikipedia [*Network packet*](https://en.wikipedia.org/wiki/Network_packet), Wikipedia website, accessed 25 August 2022.
+- [^8 - Definition - IP addresses (IPv4 and IPv6)](#definition---ip-addresses-ipv4-and-ipv6) - MDN [*How does the Internet work?*](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work), MDN website, accessed 29 August 2022.
+- [^9 - Definition - Routers and Routing](#definition---routers-and-routing) - cisco [*What is a Router? - Definition and Uses*](https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/what-is-a-router.html), cisco website, accessed 29 August 2022.
+- [^10 - Definition - Domains and DNS](#definition---domains-and-dns) - MDN [*What is a Domain Name?*](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name), MDN website, accessed 29 August 2022.
+- [^11 - Explanation - Packets](#explanation---packets) - MDN [*How the web works*](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#packets_explained), MDN website, accessed 29 August 2022.
+- [^12 - Explanation - IP addresses (IPv4 and IPv6)](#explanation---ip-addresses-ipv4-and-ipv6) - Wikipedia [*IP address*](https://en.wikipedia.org/wiki/IP_address), Wikipedia website, accessed 29 August 2022.
+- [^13 - Explanation - Routers and Routing)](#explanation---routers-and-routing) - MDN [*How does the Internet work?*](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work), MDN website, accessed 29 August 2022.
+- [^14 - Explanation - Domains and DNS)](#explanation---domains-and-dns) - MDN [*What is DNS?*](https://aws.amazon.com/route53/what-is-dns/), Amazon website, accessed 29 August 2022.
+- [^15 - TCP](#definition---tcp) - MDN [*TCP*](https://developer.mozilla.org/en-US/docs/Glossary/TCP), MDN website, accessed 29 August 2022.
+- [^16 - TCP](#definition---tcp) - Noction [*TCP (Transmission Control Protocol) Congestion Control*](https://www.noction.com/blog/tcp-transmission-control-protocol-congestion-control#:~:text=The%20main%20TCP%20features%20are,for%20creating%20multiple%20virtual%20connections.), Noction website, accessed 29 August 2022.
+- [^17 - HTTP and HTTPS](#definition---http-and-https) - MDN [*An overview of HTTP*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#basic_aspects_of_http), MDN website, accessed 29 August 2022.
+- [^18 - HTTP and HTTPS](#definition---http-and-https) - javaTpoint [*HTTP vs HTTPS*](https://www.javatpoint.com/http-vs-https), javaTpoint website, accessed 29 August 2022.
+- [^19 - Web Browsers](#definition---web-browsers-requests-rendering-and-developer-tools) - Wikipedia [*Web browser*](https://en.wikipedia.org/wiki/Web_browser), Wikipedia website, accessed 29 August 2022.
+- [^20 - Web Browsers](#definition---web-browsers-requests-rendering-and-developer-tools) - Wikipedia [*Web development tools*](https://en.wikipedia.org/wiki/Web_development_tools), Wikipedia website, accessed 29 August 2022.
+- [^21 - TCP](#explanation---tcp) - Wikipedia [*Transmission Control Protocol*](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Network_function), Wikipedia website, accessed 30 August 2022.
+- [^22 - HTTP and HTTPS](#explanation---http-and-https) - Wikipedia [*Hypertext Transfer Protocol*](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_and_response_messages_through_connections), Wikipedia website, accessed 30 August 2022.
+- [^23 - Web Browsers](#explanation---web-browsers-requests-rendering-and-developer-tools) - Lifewire [*How Web Browsers and Web Servers Communicate*](https://www.lifewire.com/web-browsers-and-web-servers-communicate-817764), Lifewire website, accessed 30 August 2022.
+- [^24 - Web Browsers](#explanation---web-browsers-requests-rendering-and-developer-tools) - Wikipedia [*Web development tools*](https://en.wikipedia.org/wiki/Web_development_tools), Wikipedia website, accessed 30 August 2022.
+- [^25 Data Structures: Dictionary](#dictionary) - Erdem Isbilen (2020)[*Python Dictionaries*](https://towardsdatascience.com/python-dictionaries-651acb069f94), Medium website, accessed 1 September 2022.
+- [^26 Data Structures: Dictionary](#dictionary) - Dan Bader (2020) [*Common Python Data Structures (Guide)*](https://realpython.com/python-data-structures/#dictionaries-maps-and-hash-tables), Real Python website, accessed 1 September 2022.
+- [^27 Data Structures: List](#list) - Erdem Isbilen (2020) [*A Complete Guide to Python Lists*](https://towardsdatascience.com/a-complete-guide-to-python-lists-6b592c8d5707), Medium website, accessed 1 September 2022.
+- [^28 Data Structures: List](#list) - Dan Bader (2020) [*Common Python Data Structures (Guide)*](https://realpython.com/python-data-structures/#list-mutable-dynamic-arrays), Real Python website, accessed 1 September 2022.
+- [^29 Data Structures: Set](#set) - Python.org [*5. Data Structures*](https://docs.python.org/3/tutorial/datastructures.html#sets), Python.org website, accessed 1 September 2022.
+- [^30 Data Structures: Set](#set) - Stack overflow [*In Python, when to use a Dictionary, List or Set?*](https://stackoverflow.com/questions/3489071/in-python-when-to-use-a-dictionary-list-or-set), Stack overflow website, accessed 1 September 2022.
+- [^31 Interpreters and Compilers](#q5---interpreters-and-compilers) - Programiz [**Interpreter Vs Compiler : Differences Between Interpreter and Compiler](https://www.programiz.com/article/difference-compiler-interpreter), Programiz website, accessed 1 September 2022.
+- [^32 Python pros / cons](#python---drawbacks) - Data Flair [*Advantages and Disadvantages of Python – How it is dominating Programming World*](https://data-flair.training/blogs/advantages-and-disadvantages-of-python/), Data Flair website, accessed 1 September 2022.
+- [^33 Python pros / cons](#python---drawbacks) - Real Python [**Dynamic vs Static](https://realpython.com/lessons/dynamic-vs-static/), Real Python website, accessed 1 September 2022.
+- [^34 JavaScript pros / cons](#javascript---drawbacks) - FreeCodeCamp [The Advantages and Disadvantages of JavaScript](https://www.freecodecamp.org/news/the-advantages-and-disadvantages-of-javascript/), FreeCodeCamp website, accessed 2 September 2022.
+- [^35 Control Flow in Python](#question-8---control-flow-in-python) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 2 September 2022.
+- [^36 Sequential Control Flow in Python](#sequential-control-flow) - Buchiredddypalli Koushik [*What are control flow statements in Python?*](https://www.educative.io/answers/what-are-control-flow-statements-in-python), Educative Website, accessed  3 September 2022.
+- [^37 Selection Control Flow in Python](#selection-control-flow) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 3 September 2022.
+- [^38 While loop in Python](#while-loop) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 3 September 2022.
+- [^39 For in Python](#for-loop) - James Gallagher (2020) [*Python for Loop: The Complete Guid*](https://careerkarma.com/blog/python-for-loop/), Career Karma website, accessed 4 September 2022.
+- [^40 For loop in Python](#for-loop) - Ryan Soklaski (2021) [*Iterables*](https://www.pythonlikeyoumeanit.com/Module2_EssentialsOfPython/Iterables.html), Python like you mean it website, accessed 4 September 2022.
+- [^41 For loop in Python](#for-loop) - Charlie Custer (2019) [*The Basics of Python For Loops: A Tutorial*](https://www.dataquest.io/blog/python-for-loop-tutorial/), Dataquest website, accessed 4 September 2022.
+- [^42 For loop in Python](#for-loop) - Python.org [*8. Compound statements*](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement), Python.org website, accessed 4 September 2022.
+- [^43 Match Case in Python](#match-case) - Luke Hande (2022) [*How to Use a match case Statement in Python 3.10*](https://learnpython.com/blog/python-match-case-statement/),Learn Python website, accessed 4 September 2022.
+- [^44 Type coercion and Type Conversion in Python](#q9---type-coercion-and-type-conversion-in-python) -Trey Hunner [*Python doesn't have type coercion*](https://www.pythonmorsels.com/type-coercion/#:~:text=Many%20programming%20languages%20have%20something,does%20not%20have%20type%20coercion.), Python morsels website, accessed 4 September 2022.
+- [^45 - Integers](#int) - David Amos (2020) [*Numbers in Python*](https://realpython.com/python-numbers/), Real python website, accessed 5 September 2022.
+- [^46 - Floating point numbers](#float) - David Amos (2020) [*Numbers in Python*](https://realpython.com/python-numbers/), Real python website, accessed 5 September 2022.
+- [^47 - Strings](#str) - Python.org [*Text Sequence Type*](https://docs.python.org/3/library/stdtypes.html#str), Python.org website, accessed 5 September 2022.
+- [^48 - Boolean Type](#bool) - Estefania Cassingena Navone (2020) [*Truthy and Falsy Values in Python: A Detailed Introduction*](https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/#:~:text=Falsy%20values%20are%20values%20that,type%2C%20None%20%2C%20and%20False%20.), FreeCodeCamp website, accessed 5 September 2022.
+- [^49 - tuple](#tuple) - Tutorials point [*Python - Tuples*](https://www.tutorialspoint.com/python/python_tuples.htm), Tutorials point website, accessed 7 September 2022.
+- [^50 - tuple](#tuple) - Tutorials point [*Python - Tuples*](https://www.tutorialspoint.com/python/python_tuples.htm), Tutorials point website, accessed 7 September 2022.
+- [^51 - None](#none) - Wolf ​(2020) [*Null in Python: Understanding Python's NoneType Object*](https://realpython.com/null-in-python/), Real python website, accessed 7 September 2022.
+- [^52 - None](#none) - Python tutorial [*Python None*](https://www.pythontutorial.net/advanced-python/python-none/), Python tutorial website, accessed 7 September 2022.
 
 
 
