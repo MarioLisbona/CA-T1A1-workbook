@@ -659,6 +659,74 @@ Python uses the keyword `None` to define null or empty obejcts are variables. It
 
 None is the value that is returned by all functions when there is no return statement:
 
+```py
+>>> def func_with_no_return():
+...     pass
+...
+>>> func_with_no_return()
+>>> print(func_with_no_return())
+None
+```
+
+We can see in the above example from the python REPL `func_with_no_return()` has no return statement so it returns None. This is not immedietly evident if we only call the function - nothing is printed to sreen. If we use `print()` to print then we see that `None` is in fact being returned. (RealPython) [^51]
+
+None is so widely used in Python that unless it is explicitly asked to be printed, the Python REPL wont print `None`
+
+Below is an example using `None` in Python to address the mutable default argument issue.
+
+The function below appends a name to a list and works as normal when passing a list that has already been initialsed with data.
+
+```py
+>>> def add_name(name, people=[]):
+...     people.append(name)
+...     return people
+...
+>>> people = ['Mario', 'Ali', 'John', 'Denise']
+>>> add_person('Alana', people)
+['Mario', 'Ali', 'John', 'Denise', 'Alana']
+>>>
+```
+
+However if we call add_name numerous times with a default argument and each time its called assign the value to a new variable we will get an unexpected result.
+
+```py
+>>> x = add_person('Jon')
+>>> print(x)
+['Jon']
+>>> y = add_person('Snow')
+>>> print(y)
+['Jon', 'Snow']
+>>> z = add_person('Daenerys Targaryen')
+>>> print(z)
+['Jon', 'Snow', 'Daenerys Targaryen']
+```
+
+We would assume that this would create a new list each time the function is called and that new list assigned to a new variable. Its clear in the above example that this is not happening. Once the list is defined, in the first function call, that same list is used in any subsequent calls of `add_name()`.
+
+We can use `None` as the default argument. Once we are inside the function we can use the `if` statement to check whether the user has entered a list as an argument or has left it to the default.
+
+```py
+>>> def add_person(name, people=None):
+...     if people is None:
+...             people = []
+...     people.append(name)
+...     return people
+...
+>>> x = add_person('Jon')
+>>> print(x)
+['Jon']
+>>> y = add_person('Snow')
+>>> print(y)
+['Snow']
+>>> z = add_person('Daenerys Targaryen')
+>>> print(z)
+['Daenerys Targaryen']
+```
+
+As you can see this is the output we expected in the previous example. (Pythontutorial) [^52]
+
+
+
 
 
 ## Question 11 - Classes
@@ -849,7 +917,9 @@ Write a program that allows a user to input their skills and then tells them :
 - [^47 - Strings](#strings) - https://docs.python.org/3/library/stdtypes.html#str
 - [^48 - Boolean Type](#bool) - https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/#:~:text=Falsy%20values%20are%20values%20that,type%2C%20None%20%2C%20and%20False%20.
 - [^49 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
-- [^50 - tuple](#tuple) - - [^49 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
+- [^50 - tuple](#tuple) - https://www.tutorialspoint.com/python/python_tuples.htm
+- [^51 - None](#none) - https://realpython.com/null-in-python/
+- [^52 - None](#none) - https://www.pythontutorial.net/advanced-python/python-none/
 
 
 
