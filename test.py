@@ -39,3 +39,9 @@ y = add_person('Snow')
 print(y)
 
 
+
+
+If temp < 15:
+    print("It's cold outside")
+    print("It would be a good idea to wear a jacket")
+

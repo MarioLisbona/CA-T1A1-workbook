@@ -814,6 +814,8 @@ Demonstrate your algorithmic thinking through completing the following two tasks
 
 <br>
 
+(Al Sweigart) [^53] (Programtopia) [^54]
+
 ### **Pseudocode - Primer numbers between 1 - 100**
 
 ```py
@@ -1114,7 +1116,7 @@ print("\n=======================================================================
 - [^50 - tuple](#tuple) - Tutorials point [*Python - Tuples*](https://www.tutorialspoint.com/python/python_tuples.htm), Tutorials point website, accessed 7 September 2022.
 - [^51 - None](#none) - Wolf ​(2020) [*Null in Python: Understanding Python's NoneType Object*](https://realpython.com/null-in-python/), Real python website, accessed 7 September 2022.
 - [^52 - None](#none) - Python tutorial [*Python None*](https://www.pythontutorial.net/advanced-python/python-none/), Python tutorial website, accessed 7 September 2022.
-
-
+- [^53 - Prime numbers flow chart](#flow-chart---primer-numbers-between-1---100) - Al Sweigart [*Automate the Boring Stuff with Python*](https://automatetheboringstuff.com/2e/chapter2/#calibre_link-121), Automate the Boring Stuff website, accessed 8 September 2022.
+- [^54 - Prime numbers flow chart](#flow-chart---primer-numbers-between-1---100) - Programtopia [*Nested loop in C*](https://www.programtopia.net/c-programming/docs/nested-loop), Programtopia website, accessed 8 September 2022.
 
  [Go to top of page](#coder-academy---assignment-t1a1---workbook-submitted-by-mario-lisbona)
