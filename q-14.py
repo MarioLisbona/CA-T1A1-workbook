@@ -4,6 +4,7 @@
 #start loop, with variable *number* , from range of 1 and 101 (end of range is exclusive):
     #if *number* is greater than 1: (1 isnt a prime number)
         #start another loop with variable *x*, from range of 2 to *number*: 
+        #This loop will always skip the first iteration because range will be range(2, 2) - which will print the first prime number
         # (this loop will always finish 1 before *number* because we are using range)
         # (so if *number* is divisible, with no remainder, by any number before its self then it cant be a prime)
             #if *number* is divisible by *x* with no remainder:
@@ -12,6 +13,8 @@
             #number was not divisible by any number between 2 and its self - 1, so its a prime.
             #Print Prime number
 
+num_count =  0
+i_count = 0
 
 for number in range(1, 101):
     if number > 1:
