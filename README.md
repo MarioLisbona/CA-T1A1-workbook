@@ -415,11 +415,29 @@ setion 10 also states:
 (a)  entry onto or into the premises without the express or implied consent of the owner or occupier of the premises, or
 (b)  interference with the computer or a computer network on the premises without the express or implied consent of the person having lawful possession or lawful control of the computer or computer network."
 
-Both these sections of the Surveillance Devices Act 2007 make it quite clear that you cannot record someone's location and movements or the data they send or receive from their devices without their consent. However, as I explain in the case study below, the increased use of spy apps being used in relationships that have broken down fall into a grey area and put a spotlight on the need for laws to catch up with the every growing pace of technological development. (NSW Government) [^67]
+Both these sections of the Surveillance Devices Act 2007 make it quite clear that you cannot record someone's location and movements or the data they send or receive from their devices without their consent. However, outside Australia, as I explain in the case study below, the increased use of spy apps being used in relationships that have broken down falls into a grey area and put a spotlight on the need for laws to catch up with the every growing pace of technological development. (NSW Government) [^67]
 
 ### **Case Study: GPS tracking data and other types of data - Monitoring spouses with Spyware**
 
+
 Conduct **research** into a case study of **ONE** of the ethical issues you have chosen **discuss** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
+
+Monitoring devices, sometimes referred to as Spyware are devices that were once only available to governments and corporations have now become so inexpensive that they are being used by people suspicious that their partners may be cheating on them. Although illegal in Australia, these spyware apps operate in a legal grey are in other parts of the world. Josh King who is the Chief Legal Officer of an online legal marketplace in the us says
+>“It’s a legal grey area, in that the laws haven’t been truly tested in this arena as of yet since the technology is relatively new, so as relevant cases move through the legal system, they’ll be decided on a case by case basis,” (Jenny Harrison 2019)[^68]
+
+Steven Burgess of Burgess Consulting & Forensics explains that in the US
+
+>“Spyware that intercepts communication would generally be considered illegal,” and that “In most cases, there is going to be a justifiable expectation of privacy and, therefore, spyware would be violating the Electronic Communications Privacy Act.”
+
+However he goes on to demonstrate the legal ambiguity surrounding the issue by adding that
+
+>“phones and other devices are community property, by default, for married couples almost everywhere. “Looking at what’s on it is generally legal and considered ethical,” explains Burgess. “In other words, what’s been stored there is fair game.” (Mary Fetzer 2016) [^69]
+
+In the following case study, the client of a full service private investigation firm, was involved in divorce proceedings as a high net worth individual. She had suspicions that her ex partner had married her solely for her money and had installed spyware on her computers to gain information about her financial situation. She also believed that she was being stalked as he would often appear at the same events of stores without her having given out information about her future plans. The client reported symptoms, including running extremely slow and battery life discharging unusually quick, that would indicate her iPone 4s has spyware installed. McCann investigators found a keylogger and spyware installed on her devices. (McCann Investigators 2017) [^70]
+
+An IT professional may encounter a situation like this as either an employee of the investigation firm performing the technological forensics on the clients property or he/she could be the person that developed the spyware. Both positions have their unique ethical perspective on this scenario. The person doing the forensics can see that even though this is non-violent cyber stalking it's still causing the client hardship and stress. And that there is the real potential for the stalking to escalate to violence or something even more severe in the future. But they also work for an employer that engages in private investigations themselves, which are effectively sponsored stalking. Knowing that at the very least they are working in a legally grey area, and in some cases may be working in a state where there is no law against the use of these devices makes it hard to decide which way direction to take, the direction the moral compass is pointing to or take guidance from the lawful compass.
+
+The IT professional who develops this kind of spyware has a hard decision to make as well. Do they take the moral high ground or keep operating under the current laws even though they are quite ambiguous. Perhaps they could collaborate with lawmakers to give them a much more informed perspective of what the technology does and how its being used and also abused. This consultation and communication between the private and public sectors could be the start of a relationship where newer, more specific laws could be created to target the nefarious use of this technology. Although this might be seen as resulting in a downtrend of people purchasing and using the spyware technology, with the relationship that would have formed with the private sector it may result in the technology actually being used in a larger variety of situations including fighting organised crime or using the technologies to create more efficiencies waste disposal or improvements in public transport networks.
 
 
 
@@ -1270,6 +1288,8 @@ print("\n=======================================================================
 GPS Tracking and Monitoring*](https://www3.nd.edu/~cpoellab/teaching/cse40827/papers/tracking.pdf), University of Wollongong website, accessed 9 September 2022.
 - [^67 - GPS tracking data](#gps-tracking-data-and-other-types-of-data) - NSW Government [*Surveillance Devices Act 2007 No 64*](https://legislation.nsw.gov.au/view/whole/html/inforce/current/act-2007-064#statusinformation) NSW Legislation website, accessed 9 September 2022.
 - [^68 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - Jenny Harrison (2019) [*Is it Legal to Monitor Your Spouse Using Spyware?*](https://www.lawfuel.com/blog/is-it-legal-to-monitor-your-spouse-using-spyware/), LawFuel website, accessed 9 September 2022.
+- [^69 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - Mary Fetzer (2016) [*Should You Use an App to Spy on Your Cheating Spouse?*](https://www.divorcemag.com/blog/should-you-use-an-app-to-spy-on-your-cheating-spouse), divorcemag website, accessed 9 September 2022.
+- [^70 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - (McCann Investigators 2017) [*Case Study:  Cyber Stalking and Spyware in Divorce Cases*](https://silo.tips/download/case-study-cyber-stalking-and-spyware-in-divorce-cases#), silo.tips website, accessed 9 September 2022.
 
 
  [Go to top of page](#coder-academy---assignment-t1a1---workbook-submitted-by-mario-lisbona)
