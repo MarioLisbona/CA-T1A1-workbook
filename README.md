@@ -38,7 +38,8 @@
     - [**JavaScript - Drawbacks**](#javascript---drawbacks)
   - [**Q7 - Ethics and Tech**](#q7---ethics-and-tech)
     - [**Access to a user’s personal information**](#access-to-a-users-personal-information)
-    - [**GPS tracking data**](#gps-tracking-data)
+    - [**GPS tracking data and other types of data**](#gps-tracking-data-and-other-types-of-data)
+    - [**Case Study: GPS tracking data and other types of data - Monitoring spouses with Spyware**](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware)
   - [**Q8 - Control Flow in Python**](#q8---control-flow-in-python)
     - [**Sequential control flow**](#sequential-control-flow)
     - [**Selection control flow**](#selection-control-flow)
@@ -382,20 +383,45 @@ Another principle in the privacy act that is relevant to the above story about t
 
 Although the unorthoised access of other users Move with Us accounts may not have been malicious it still occured and its a breach of those user's privacy. The principle also states that steps should be taken to ensure the information is deidentified. This could be achieved with the before and after photos of the fitness app users by perhaps requesting that photos do not include the face or bluring the users faces.
 
-### **GPS tracking data**
+### **GPS tracking data and other types of data**
 
-The Global Positioning System which became operational in 1993. Its use was limited to the American Military. (Wikipedia) [^64] 30 years later it's a piece of technology that is globally ubiquitous and in almost every smartphone sold. (Lifewire) [^65] The proliferation of GPS devices have changed the way we live and made huge improvements in our lives in areas including day to day commutes, people travelling solo or travelling to remote locations. There are also the benefits to businesses being able to attract people who are in the local area. GPS tracking has also aided police forces in rescue missions, crime investigations and allowed logistics businesses to become more efficient in the tracking and delivery of goods around the world.
+The Global Positioning System which became operational in 1993. Its use was limited to the American Military. (Wikipedia) [^64] 30 years later it's a piece of technology that is globally ubiquitous and in almost every smartphone sold. (Fred Zahradnik 2021) [^65] The proliferation of GPS devices have changed the way we live and made huge improvements in our lives in areas including day to day commutes, people travelling solo or travelling to remote locations. There are also the benefits to businesses being able to attract people who are in the local area. GPS tracking has also aided police forces in rescue missions, crime investigations and allowed logistics businesses to become more efficient in the tracking and delivery of goods around the world.
 
+These benefits come alongside concerns for the people using devices and huge responsibilities for the companies and professionals developing the technology. Cheif amongst these concerns is privacy. There are seemingly endless situations where an IT professional needs to be ethically aware of how the GPS devices are being used and develop policies around their ethical use. Below are just a few examples.
 
+- What location-specific information should an individual be required to reveal to others?
 
+In most cases a person's location doesn't need to be known unless they are doing something unexpected. It may be ethical though to want to be notified of a child who hasn't attended school, a dementia patient who has left their care facility or a parolee who has left their home while under house arrest.
 
+- What kind of surveillance can a parent use on a child
 
+Although a missing child has a better chance of being found if they are wearing a tracking device it brings up some ethical issues of consent. At what age does the child have a right to determine whether they want to be tracked or not? Are parents developing unhealthy relationships with their children by relying on technology rather than trust? Parents who have lost children would argue that a gps tracker would be life saving technology but it does bring up issues that need consideration by those developing the technology as well as the users.
 
+- Do police need a warrant to track a suspected criminal or terrorist?
 
+There have been several cases where tracking a person with a GPS is similar to following them on the street. This is a dangerous road to go down as gps tracking is much more pervasive and powerful. A person is much more aware of someone following them down a street and a tracker can work anytime and anywhere. Warrants and laws to place a GPS tracker on suspected criminals or regular citizens are essential to make sure they are used ethically and not left open to nefarious use by both governments and citizens. (K. Michael, A. McNamee, M. G. Michael 2006)[^66]
 
+The Surveillance Devices Act 2007 has some strong laws with regard to location data and other data collected without consent and provides a good framework for the devives and data to be used in an ethical way. Part 2, 9. states that:
 
+>"Prohibition on installation, use and maintenance of tracking devices
+(1)  A person must not knowingly install, use or maintain a tracking device to determine the geographical location of—
+(a)  a person—without the express or implied consent of that person, or
+(b)  an object—without the express or implied consent of a person in lawful possession or having lawful control of that object."
+
+setion 10 also states:
+
+>"Prohibition on installation, use and maintenance of data surveillance devices
+(1)  A person must not knowingly install, use or maintain a data surveillance device on or in premises to record or monitor the input of information into, or the output of information from, a computer on the premises if the installation, use or maintenance of the device involves—
+(a)  entry onto or into the premises without the express or implied consent of the owner or occupier of the premises, or
+(b)  interference with the computer or a computer network on the premises without the express or implied consent of the person having lawful possession or lawful control of the computer or computer network."
+
+Both these sections of the Surveillance Devices Act 2007 make it quite clear that you cannot record someone's location and movements or the data they send or receive from their devices without their consent. However, as I explain in the case study below, the increased use of spy apps being used in relationships that have broken down fall into a grey area and put a spotlight on the need for laws to catch up with the every growing pace of technological development. (NSW Government) [^67]
+
+### **Case Study: GPS tracking data and other types of data - Monitoring spouses with Spyware**
 
 Conduct **research** into a case study of **ONE** of the ethical issues you have chosen **discuss** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
+
+
 
 ## **Q8 - Control Flow in Python**
 
@@ -1232,15 +1258,18 @@ print("\n=======================================================================
 - [^55 - Access to user's personal information](#access-to-a-users-personal-information) - APO [*Consumer data and the digital economy: emerging issues in data collection, use and sharing*](https://apo.org.au/node/241516), APO website, accessed 9 September 2022.
 - [^56 - Access to user's personal information](#access-to-a-users-personal-information) - Harvard Business School [*5 PRINCIPLES OF DATA ETHICS FOR BUSINES*](https://online.hbs.edu/blog/post/data-ethics), Harvard Business School Online website, accessed 9 September 2022.
 - [^57 - Access to user's personal information](#access-to-a-users-personal-information) - Harvard Business School [*5 PRINCIPLES OF DATA ETHICS FOR BUSINES*](https://online.hbs.edu/blog/post/data-ethics), Harvard Business School Online website, accessed 9 September 2022.
-- [^58 - Access to user's personal information](#access-to-a-users-personal-information) WA Today [*WA man inundated with hate after being wrongly named in Seven’s Cleo article*](https://www.watoday.com.au/national/western-australia/wa-man-inundated-with-hate-after-being-wrongly-named-in-seven-s-cleo-article-20211108-p59744.html), WA Today website, accessed 9 September 2022.
-- [^59 - Access to user's personal information](#access-to-a-users-personal-information) News.com.au [*Rachel Dillon’s fitness app exposes users after major data breach*](https://www.news.com.au/technology/online/social/rachel-dillons-fitness-app-exposes-users-after-major-data-breach/news-story/adca32fcd27d4795fe827711424e0993), News.com.au website, acessed 9 September 2022.
-- [^60 - Access to user's personal information](#access-to-a-users-personal-information) Attorney-General's Department [*Privacy*](https://www.ag.gov.au/rights-and-protections/privacy#:~:text=The%20Privacy%20Act%201988%20(Privacy,and%20in%20the%20private%20sector.), Attorney-General's Department website, acessed 9 September 2022.
-- [^61 - Access to user's personal information](#access-to-a-users-personal-information) Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
-- [^62 - Access to user's personal information](#access-to-a-users-personal-information) Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
-- [^63 - Access to user's personal information](#access-to-a-users-personal-information) Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
-- [^64 - GPS tracking data](#gps-tracking-data) Wikipedia [*Global Positioning System*](https://en.wikipedia.org/wiki/Global_Positioning_System), Wikipedia website, accessed 9 September 2022.
-- [^64 - GPS tracking data](#gps-tracking-data) Lifewire [*How Assisted GPS Works in Cellphones*](https://www.lifewire.com/assisted-gps-1683306), Lifewire website, accessed 9 September 2022.
-- 
+- [^58 - Access to user's personal information](#access-to-a-users-personal-information) - WA Today [*WA man inundated with hate after being wrongly named in Seven’s Cleo article*](https://www.watoday.com.au/national/western-australia/wa-man-inundated-with-hate-after-being-wrongly-named-in-seven-s-cleo-article-20211108-p59744.html), WA Today website, accessed 9 September 2022.
+- [^59 - Access to user's personal information](#access-to-a-users-personal-information) - News.com.au [*Rachel Dillon’s fitness app exposes users after major data breach*](https://www.news.com.au/technology/online/social/rachel-dillons-fitness-app-exposes-users-after-major-data-breach/news-story/adca32fcd27d4795fe827711424e0993), News.com.au website, acessed 9 September 2022.
+- [^60 - Access to user's personal information](#access-to-a-users-personal-information) - Attorney-General's Department [*Privacy*](https://www.ag.gov.au/rights-and-protections/privacy#:~:text=The%20Privacy%20Act%201988%20(Privacy,and%20in%20the%20private%20sector.), Attorney-General's Department website, acessed 9 September 2022.
+- [^61 - Access to user's personal information](#access-to-a-users-personal-information) - Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
+- [^62 - Access to user's personal information](#access-to-a-users-personal-information) - Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
+- [^63 - Access to user's personal information](#access-to-a-users-personal-information) - Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
+- [^64 - GPS tracking data](#gps-tracking-data-and-other-types-of-data) - Wikipedia [*Global Positioning System*](https://en.wikipedia.org/wiki/Global_Positioning_System), Wikipedia website, accessed 9 September 2022.
+- [^65 - GPS tracking data](#gps-tracking-data-and-other-types-of-data) - Fred Zahradnik (2021) [*How Assisted GPS Works in Cellphones*](https://www.lifewire.com/assisted-gps-1683306), Lifewire website, accessed 9 September 2022.
+- [^66 - GPS tracking data](#gps-tracking-data-and-other-types-of-data) - K. Michael, A. McNamee, M. G. Michael (2006)[*The Emerging Ethics of Humancentric
+GPS Tracking and Monitoring*](https://www3.nd.edu/~cpoellab/teaching/cse40827/papers/tracking.pdf), University of Wollongong website, accessed 9 September 2022.
+- [^67 - GPS tracking data](#gps-tracking-data-and-other-types-of-data) - NSW Government [*Surveillance Devices Act 2007 No 64*](https://legislation.nsw.gov.au/view/whole/html/inforce/current/act-2007-064#statusinformation) NSW Legislation website, accessed 9 September 2022.
+- [^68 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - Jenny Harrison (2019) [*Is it Legal to Monitor Your Spouse Using Spyware?*](https://www.lawfuel.com/blog/is-it-legal-to-monitor-your-spouse-using-spyware/), LawFuel website, accessed 9 September 2022.
 
 
  [Go to top of page](#coder-academy---assignment-t1a1---workbook-submitted-by-mario-lisbona)
