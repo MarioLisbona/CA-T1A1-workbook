@@ -37,7 +37,8 @@
     - [**JavaScript - Benefits**](#javascript---benefits)
     - [**JavaScript - Drawbacks**](#javascript---drawbacks)
   - [**Q7 - Ethics and Tech**](#q7---ethics-and-tech)
-    - [**access to a user’s personal information**](#access-to-a-users-personal-information)
+    - [**Access to a user’s personal information**](#access-to-a-users-personal-information)
+    - [**GPS tracking data**](#gps-tracking-data)
   - [**Q8 - Control Flow in Python**](#q8---control-flow-in-python)
     - [**Sequential control flow**](#sequential-control-flow)
     - [**Selection control flow**](#selection-control-flow)
@@ -303,19 +304,96 @@ An interpreter will translate a program line by line and will take less time to 
 
 **Identify** TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
 
-List of topics containing ethical issues:
-- access to a user’s personal information (medical, family, financial, personal attributes such as sexuality, religion, or beliefs)
+
+
 - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
 - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
 - freedom of thought, conscience, speech and the media
 - aggressive sales and marketing practices designed to mislead and deceive consumers
 - trading of shares on the stock exchange OR crypto-currencies
 
-### **access to a user’s personal information**
+### **Access to a user’s personal information**
+
+User data is an integral and powerful resource when it comes to technology and its use immensely improves a user’s experiences with technology. There are huge benefits that come with the mass collection of user data,
+
+>“including improved public health, stronger fraud detection, improved efficiencies and processes, relevant advertising, and access to more suitable products”(Phuong Nguyen, Lauren Solomon 2018) [^55] 
+ 
+ However this powerful resource comes with widespread challenges and high consequences if it is not handled ethically at any stage of the process from gathering, through  to storage and eventual use. 
+Data ethics are a huge concern to IT professionals. Whether you are directly or indirectly responsible for writing code that gathers user information, or you are managing a database containing the personal and private information of you users, having a broad understanding of data ethics can help you spot unethical data practices or give you tools to avoid it in the first place.
+Listed below are 5 data ethics principles that should be taken into consideration whenever you are handling user data as an IT professional: (Catherine Cote 2021)[^56]
+
+- Ownership
+  
+  Users have complete ownership over their personal data in the same way they have ownership over any of their physical property. It's not only unethical but is illegal to take someone's personal data without their permission. Some ways to get a user's consent to obtain their data include digital privacy policies where a user has to agree to the companies terms and conditions about what they will do with that data or a signed agreement to allow the company to collect and use specific data.
+
+- Transparency
+
+  Users also have the right to know how their personal information is going to be used. Whether a users data is going to be used to personalise a website for them, or be applied to an algorithm for targeted advertising, they are lawfully within their rights to know what their data will be used for so that they have the opportunity to opt out if they do not agree with the way their data is being used.
+
+- Privacy
+  
+  Just because a customer or user has consented to allowing you to collect their personal information that doesn't mean that they are happy for that information to be made public. Personally Identifiable Information(PII) refers to data that can be used to track an individual in the real world and includes information such as their full name, date of birth, phone number or credit card information to name a few. This kind of data needs to be stored in secure databases and make use of encryption or 2FA technology to protect users' privacy. Another method that can help protect user’s privacy is by de-identifying data sets. This is the process of stripping data from data sets that could identify individuals while leaving enough anonymous data in the data set to still make them useful.
+
+- Intention
+
+  Intention is everything. Obviously if your intentions are to profit from weakness, prey on the vulnerable or involve any sort of malicious intent then it is certainly not ethical to collect data for that purpose. Even with good intentions, IT professionals should still question whether each piece of data being collected is absolutely necessary for their core goals to function correctly.
+
+- Outcomes
+
+  Even when intentions are good, and only the most necessary data has been collected there can still be outcomes that inadvertently harm individuals or groups of people. This is know as a disparate impact and 
+  
+  >“is outlined in the Civil Rights act as unlawful” (Catherine Cote 2021)[^57] 
+  
+  An example of this could be having a common name or a name that you have slightly changed on your social media profile and being accused of a crime you didn't commit. This happened recenlty in Western Australia where a man ,Terrance Flowers, was wrongly accused by the Seven Network as being involved in the abduction of four year old Cleo Smith. 
+  
+  >“While Mr Flowers shares the same name on Facebook as the accused abductor, the spelling is different. Mr Flowers is a 27-year-old Nyamal man from the Pilbara living in Karratha, whereas Mr Kelly, who is in police custody, is 36 and lived in Carnarvon.
+  The Seven Network published unblurred images taken from Mr Flowers’ Facebook page with “Terrance Kelly” as the caption across multiple platforms, wrongfully identifying him as the man police had taken into custody earlier on Wednesday.” (Lauren Pilat 2021) [^58]
+
+  A more recent incident of an unintended outcome involves a fitness/weight loss app, Move with Us, that provides online fitness programs and encourages users to take progress photos to show their improvement as they use the app. There was good intentions behind this idea of showing users how much their health has improved and how good they look to motivate them further. But with the recent data breach this has resulted in users “logging into other people’s profiles when they opened the app, giving them access to their personal information, including pictures (often either naked or in underwear), emails, full names, date of birth and address. Each time a user logged out and tried to log back in, they were in another person’s profile. There were instances of users logging into as many as 10 different profiles as the problem persisted for more than two hours." (Hamish Spence 2022)[^59]
+
+The Privacy act 1988 is the 
+
+>“principal piece of Australian legislation protecting the handling of personal information about individuals. This includes the collection, use, storage and disclosure of personal information in the federal public sector and in the private sector.” (Attorney-General's Department 2022)[^60]
+
+The online privacy bill was drafted in 2021 will help strengthen the privacy act in the digital age. It introduces an online privacy code for social media and other online platforms.
+
+The privacy act sets out the Australian Privacy Principles that require an APP agency or entity (generally speaking a federal government body or an organisation) to 
+
+>“consider the privacy of personal information, including ensuring that APP entities manage personal information in an open and transparent way.” (Australian Goverment)[^61]
+
+For example, Schedule 1 Part 2 relates to the collection of sensitive Personal Information and states:
+
+>"3.3  An APP entity must not collect sensitive information about an individual unless:
+(a)  the individual consents to the collection of the information and:
+(i)  if the entity is an agency—the information is reasonably necessary for, or directly related to, one or more of the entity’s functions or activities; or
+(ii)  if the entity is an organisation—the information is reasonably necessary for one or more of the entity’s functions or activities;" (Australian Goverment)[^62]
+
+This principle guides organisations and IT professional in the way they should collect personal data from users. The data should only be collected if it directly relates to one of the core fucntions of the organisation or application (after consent has been granted to collect the data.)
+
+Another principle in the privacy act that is relevant to the above story about the fitness app data breach is the principles in Schedule 1, Part 4, 11 - Security of personal information and it states:
+
+>"11.1  If an APP entity holds personal information, the entity must take such steps as are reasonable in the circumstances to protect the information:
+(a)  from misuse, interference and loss; and
+(b)  from unauthorised access, modification or disclosure. 11.2  If:
+(a)  an APP entity holds personal information about an individual; and
+(b)  the entity no longer needs the information for any purpose for which the information may be used or disclosed by the entity under this Schedule; and
+(c)  the information is not contained in a Commonwealth record; and
+(d)  the entity is not required by or under an Australian law, or a court/tribunal order, to retain the information; the entity must take such steps as are reasonable in the circumstances to destroy the information or to ensure that the information is de‑identified." (Australian Goverment)[^63]
+
+Although the unorthoised access of other users Move with Us accounts may not have been malicious it still occured and its a breach of those user's privacy. The principle also states that steps should be taken to ensure the information is deidentified. This could be achieved with the before and after photos of the fitness app users by perhaps requesting that photos do not include the face or bluring the users faces.
+
+### **GPS tracking data**
+
+The Global Positioning System which became operational in 1993. Its use was limited to the American Military. (Wikipedia) [^64] 30 years later it's a piece of technology that is globally ubiquitous and in almost every smartphone sold. (Lifewire) [^65] The proliferation of GPS devices have changed the way we live and made huge improvements in our lives in areas including day to day commutes, people travelling solo or travelling to remote locations. There are also the benefits to businesses being able to attract people who are in the local area. GPS tracking has also aided police forces in rescue missions, crime investigations and allowed logistics businesses to become more efficient in the tracking and delivery of goods around the world.
 
 
 
-For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way. *(Word count guide: 200 words max)*
+
+
+
+
+
+
 
 Conduct **research** into a case study of **ONE** of the ethical issues you have chosen **discuss** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
 
@@ -1151,5 +1229,18 @@ print("\n=======================================================================
 - [^52 - None](#none) - Python tutorial [*Python None*](https://www.pythontutorial.net/advanced-python/python-none/), Python tutorial website, accessed 7 September 2022.
 - [^53 - Prime numbers flow chart](#flow-chart---primer-numbers-between-1---100) - Al Sweigart [*Automate the Boring Stuff with Python*](https://automatetheboringstuff.com/2e/chapter2/#calibre_link-121), Automate the Boring Stuff website, accessed 8 September 2022.
 - [^54 - Prime numbers flow chart](#flow-chart---primer-numbers-between-1---100) - Programtopia [*Nested loop in C*](https://www.programtopia.net/c-programming/docs/nested-loop), Programtopia website, accessed 8 September 2022.
+- [^55 - Access to user's personal information](#access-to-a-users-personal-information) - APO [*Consumer data and the digital economy: emerging issues in data collection, use and sharing*](https://apo.org.au/node/241516), APO website, accessed 9 September 2022.
+- [^56 - Access to user's personal information](#access-to-a-users-personal-information) - Harvard Business School [*5 PRINCIPLES OF DATA ETHICS FOR BUSINES*](https://online.hbs.edu/blog/post/data-ethics), Harvard Business School Online website, accessed 9 September 2022.
+- [^57 - Access to user's personal information](#access-to-a-users-personal-information) - Harvard Business School [*5 PRINCIPLES OF DATA ETHICS FOR BUSINES*](https://online.hbs.edu/blog/post/data-ethics), Harvard Business School Online website, accessed 9 September 2022.
+- [^58 - Access to user's personal information](#access-to-a-users-personal-information) WA Today [*WA man inundated with hate after being wrongly named in Seven’s Cleo article*](https://www.watoday.com.au/national/western-australia/wa-man-inundated-with-hate-after-being-wrongly-named-in-seven-s-cleo-article-20211108-p59744.html), WA Today website, accessed 9 September 2022.
+- [^59 - Access to user's personal information](#access-to-a-users-personal-information) News.com.au [*Rachel Dillon’s fitness app exposes users after major data breach*](https://www.news.com.au/technology/online/social/rachel-dillons-fitness-app-exposes-users-after-major-data-breach/news-story/adca32fcd27d4795fe827711424e0993), News.com.au website, acessed 9 September 2022.
+- [^60 - Access to user's personal information](#access-to-a-users-personal-information) Attorney-General's Department [*Privacy*](https://www.ag.gov.au/rights-and-protections/privacy#:~:text=The%20Privacy%20Act%201988%20(Privacy,and%20in%20the%20private%20sector.), Attorney-General's Department website, acessed 9 September 2022.
+- [^61 - Access to user's personal information](#access-to-a-users-personal-information) Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
+- [^62 - Access to user's personal information](#access-to-a-users-personal-information) Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
+- [^63 - Access to user's personal information](#access-to-a-users-personal-information) Australian Goverment [*Privacy Act 1988*](https://www.legislation.gov.au/Details/C2022C00199/Html/Text), Federal Register of Legislation website, accessed 9 September 2022.
+- [^64 - GPS tracking data](#gps-tracking-data) Wikipedia [*Global Positioning System*](https://en.wikipedia.org/wiki/Global_Positioning_System), Wikipedia website, accessed 9 September 2022.
+- [^64 - GPS tracking data](#gps-tracking-data) Lifewire [*How Assisted GPS Works in Cellphones*](https://www.lifewire.com/assisted-gps-1683306), Lifewire website, accessed 9 September 2022.
+- 
+
 
  [Go to top of page](#coder-academy---assignment-t1a1---workbook-submitted-by-mario-lisbona)
