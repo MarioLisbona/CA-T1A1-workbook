@@ -765,6 +765,39 @@ The code snippet below looks for the first two elements that are out of order an
 
 <br>
 
+The code provided above has a few errors that are causing it to have an unexpected output.
+
+- **Line 3**: In Python there is no `.len()` method associated with a list. To find the length of the list, the function `len()` needs to be called with `arr` passed in as an argument.
+
+- **lines 5, 6 & 7**: These lines will produce an unexpected indentation error. The code will not even be able to execute. Once they have the proper indentation ,they will still produce the wrong output. We can do one of two things here:
+  1. Indent line 5 to make all the code a block within the while loop
+  2. Unindent lines 6 and 7 which will create a situation where lines 5, 6 and 7 will only be executed when the while loop exits.
+
+
+In the first scenario, making lines 5, 6 and 7 part of the while loop will not solve the problem. The while loop starts with `i = 0` so both conditions are true, we start the loop and `i` is immediately incremented and we print `i = 1`.    
+Now, on line 6, `arr[i] = arr[i+1]` will assign arr[index 2] (value 29) to arr[index 1] (initial value 22 - changed to 29)
+
+Line 7, `arr[i+1] = arr[i]` will assign the value of arr[index 1] (value 29 - changed on the previous line of code) to arr[index 2] (value 29)
+
+arr is now `[5, 29, 29, 39, 19, 51, 78, 96, 84]`
+
+We can already see this is the wrong result even before the program has exited. The current iteration ends and the while loop conditions are checked for the second time. The condition, `arr[i] < arr[i+1]`  will now fail because arr[index 1] (value 29) is not less than arr[index 2] (value 29). The program exits with the wrong result.
+
+Lets go through the second scenario. If we unindent all the code and just leave the incrementer inside the loop, the while loop will run with no code being executed on the list, `arr` until the while loop fails after its 3rd iteration. The while loop condition fails after the 3rd iteration because arr[index 3] (value 39) is not less than arr[index 4] (value 19). The while loop exits and i (3) is printed to screen.
+
+Lines 6 and 7 will still not work in this scenario either, they will produce the same result as the previous scenario but applied to elements deeper in the list, elements 3 and 4. We need to tweak these lines of code and perform both the lines in the one expression.
+
+```py
+arr[i], arr[i + 1] = arr[i + 1], arr[i]
+```
+This will assign the current values of arr[3], arr[4] to positions arr[4], arr[3] 
+
+arr is now ```[5, 22, 29, 19, 39, 51, 78, 96, 84]```
+
+The first two elements encountered that were out of order, arr[3] (value 39) and arr[4] (value 19) have been swapped so they are now in ascending order.
+
+The code below produces the correct result with only that a slight refactor.
+
 ```py
 # creating the list of numbers
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
@@ -791,7 +824,7 @@ print("New list\t", arr)
 
 **Output**
 
-```
+```py
 Original list    [5, 22, 29, 39, 19, 51, 78, 96, 84]
 3
 New list         [5, 22, 29, 19, 39, 51, 78, 96, 84]
@@ -821,13 +854,13 @@ Demonstrate your algorithmic thinking through completing the following two tasks
 ```py
 #start loop, with variable *number* , from range of 1 and 101 (end of range is exclusive):
     #if *number* is greater than 1: (1 isnt a prime number)
-        #start another loop with variable *x*, from range of 2 to *number*: 
+        #start another loop with variable *i*, from range of 2 to *number*: 
         # (this loop will always finish 1 before *number* because we are using range)
         # (so if *number* is divisible, with no remainder, by any number before its self then it cant be a prime)
-            #if *number* is divisible by *x* with no remainder:
-                #not a prime number, break out of inner loop
+            #if *number* is divisible by *i* with no remainder:
+                #cannot be a prime number, break out of inner loop
         #else:
-            #number was not divisible by any number between 2 and its self - 1, so its a prime.
+            #number was not divisible by any number between 2 and its (self - 1), so its a prime.
             #Print Prime number
 ```
 

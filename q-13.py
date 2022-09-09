@@ -19,3 +19,17 @@ arr[i], arr[i + 1] = arr[i + 1], arr[i]
 
 # printing the new list with the first two elements that are out of order now put in order
 print("New list\t", arr)
+
+
+# arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+# i = 0
+# while (i < len(arr) - 1) and (arr[i] < arr[i+1]):
+#     i +=1
+# print(1)
+
+# print(arr)
+# arr[i], arr[i + 1] = arr[i + 1], arr[i]
+# # arr[i] = arr[i+1]
+# # arr[i+1] = arr[i]   
+# print(arr)
+
