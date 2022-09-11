@@ -116,7 +116,7 @@ In the html below, the tags are labled section, figure, h4, p, nav and a. The el
   
   This type of markup is used to convey the type of content that is being wrapped by a tag. It helps to convey the purpose of the text being presented.(Erika Varagouli 2021) [^5] Its purpose is to label parts of a document based on what the content is rather than how that content should be presented. (Wikipedia) [^6] Some examples of markup and where they would be used on a webpage ar shown below.
 
-  <img src="./docs/semantic%20html.png" width="600" alt="semantic html use">
+  <img src="./docs/semantic-html.png" width="600" alt="semantic html use">
 
   (W3Schools) [^7]
 
@@ -1333,16 +1333,16 @@ GPS Tracking and Monitoring*](https://www3.nd.edu/~cpoellab/teaching/cse40827/pa
 - [^49 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - Jenny Harrison (2019) [*Is it Legal to Monitor Your Spouse Using Spyware?*](https://www.lawfuel.com/blog/is-it-legal-to-monitor-your-spouse-using-spyware/), LawFuel website, accessed 9 September 2022.
 - [^50 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - Mary Fetzer (2016) [*Should You Use an App to Spy on Your Cheating Spouse?*](https://www.divorcemag.com/blog/should-you-use-an-app-to-spy-on-your-cheating-spouse), divorcemag website, accessed 9 September 2022.
 - [^51 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - McCann Investigators (2017) [*Case Study:  Cyber Stalking and Spyware in Divorce Cases*](https://silo.tips/download/case-study-cyber-stalking-and-spyware-in-divorce-cases#), silo.tips website, accessed 9 September 2022.
-- [^52 Control Flow in Python](#q8---control-flow-in-python) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 2 September 2022.
-- [^53 Sequential Control Flow in Python](#sequential-control-flow) - Buchiredddypalli Koushik [*What are control flow statements in Python?*](https://www.educative.io/answers/what-are-control-flow-statements-in-python), Educative Website, accessed  3 September 2022.
-- [^54 Selection Control Flow in Python](#selection-control-flow) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 3 September 2022.
-- [^55 While loop in Python](#while-loop) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 3 September 2022.
-- [^56 For in Python](#for-loop) - James Gallagher (2020) [*Python for Loop: The Complete Guid*](https://careerkarma.com/blog/python-for-loop/), Career Karma website, accessed 4 September 2022.
-- [^57 For loop in Python](#for-loop) - Ryan Soklaski (2021) [*Iterables*](https://www.pythonlikeyoumeanit.com/Module2_EssentialsOfPython/Iterables.html), Python like you mean it website, accessed 4 September 2022.
-- [^58 For loop in Python](#for-loop) - Charlie Custer (2019) [*The Basics of Python For Loops: A Tutorial*](https://www.dataquest.io/blog/python-for-loop-tutorial/), Dataquest website, accessed 4 September 2022.
-- [^59 For loop in Python](#for-loop) - Python.org [*8. Compound statements*](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement), Python.org website, accessed 4 September 2022.
-- [^60 Match Case in Python](#match-case) - Luke Hande (2022) [*How to Use a match case Statement in Python 3.10*](https://learnpython.com/blog/python-match-case-statement/),Learn Python website, accessed 4 September 2022.
-- [^61 Type coercion and Type Conversion in Python](#q9---type-coercion-and-type-conversion-in-python) -Trey Hunner [*Python doesn't have type coercion*](https://www.pythonmorsels.com/type-coercion/#:~:text=Many%20programming%20languages%20have%20something,does%20not%20have%20type%20coercion.), Python morsels website, accessed 4 September 2022.
+- [^52 - Control Flow in Python](#q8---control-flow-in-python) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 2 September 2022.
+- [^53 - Sequential Control Flow in Python](#sequential-control-flow) - Buchiredddypalli Koushik [*What are control flow statements in Python?*](https://www.educative.io/answers/what-are-control-flow-statements-in-python), Educative Website, accessed  3 September 2022.
+- [^54 - Selection Control Flow in Python](#selection-control-flow) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 3 September 2022.
+- [^55 - While loop in Python](#while-loop) - O’Reilly Media [*Control Flow Statements*](https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html), O’Reilly Media website, accessed 3 September 2022.
+- [^56 - For in Python](#for-loop) - James Gallagher (2020) [*Python for Loop: The Complete Guid*](https://careerkarma.com/blog/python-for-loop/), Career Karma website, accessed 4 September 2022.
+- [^57 - For loop in Python](#for-loop) - Ryan Soklaski (2021) [*Iterables*](https://www.pythonlikeyoumeanit.com/Module2_EssentialsOfPython/Iterables.html), Python like you mean it website, accessed 4 September 2022.
+- [^58 - For loop in Python](#for-loop) - Charlie Custer (2019) [*The Basics of Python For Loops: A Tutorial*](https://www.dataquest.io/blog/python-for-loop-tutorial/), Dataquest website, accessed 4 September 2022.
+- [^59 - For loop in Python](#for-loop) - Python.org [*8. Compound statements*](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement), Python.org website, accessed 4 September 2022.
+- [^60 - Match Case in Python](#match-case) - Luke Hande (2022) [*How to Use a match case Statement in Python 3.10*](https://learnpython.com/blog/python-match-case-statement/),Learn Python website, accessed 4 September 2022.
+- [^61 - Type coercion and Type Conversion in Python](#q9---type-coercion-and-type-conversion-in-python) -Trey Hunner [*Python doesn't have type coercion*](https://www.pythonmorsels.com/type-coercion/#:~:text=Many%20programming%20languages%20have%20something,does%20not%20have%20type%20coercion.), Python morsels website, accessed 4 September 2022.
 - [^62 - Integers](#int) - David Amos (2020) [*Numbers in Python*](https://realpython.com/python-numbers/), Real python website, accessed 5 September 2022.
 - [^63 - Floating point numbers](#float) - David Amos (2020) [*Numbers in Python*](https://realpython.com/python-numbers/), Real python website, accessed 5 September 2022.
 - [^64 - Strings](#str) - Python.org [*Text Sequence Type*](https://docs.python.org/3/library/stdtypes.html#str), Python.org website, accessed 5 September 2022.
