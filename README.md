@@ -50,17 +50,17 @@
   - [**Q9 - Type Coercion and Type Conversion in Python**](#q9---type-coercion-and-type-conversion-in-python)
   - [**Q10 - Data Types**](#q10---data-types)
     - [**Numeric Types**](#numeric-types)
-      - [int](#int)
-      - [float](#float)
-      - [complex](#complex)
+      - [**int**](#int)
+      - [**float**](#float)
+      - [**complex**](#complex)
     - [**Text Type**](#text-type)
-      - [str](#str)
+      - [**str**](#str)
     - [**Boolean Type**](#boolean-type)
-      - [bool](#bool)
+      - [**bool**](#bool)
     - [**Sequnce Type**](#sequnce-type)
-      - [tuple](#tuple)
+      - [**tuple**](#tuple)
     - [**None Type**](#none-type)
-      - [None](#none)
+      - [**None**](#none)
   - [**Q11 - Classes**](#q11---classes)
   - [**Q12 - Find the error in a Code Snippet**](#q12---find-the-error-in-a-code-snippet)
   - [**Q13 - Rewrite a Code Snippet to swap two adjacent elements in an list**](#q13---rewrite-a-code-snippet-to-swap-two-adjacent-elements-in-an-list)
@@ -84,6 +84,20 @@
   
   Tags indicate where an element starts and ends. An element consists of the tags and the content that is enclosed by those tags. (Erika Varagouli 2021) [^2]
 
+In the html below, the tags are labled section, figure, h4, p, nav and a. The element consists of everything between the opening tag, sourounded by `<>` and the closing tag, sounded by `</>`
+```html
+<section class="preview-card">
+        <figure id="article-preview-pic"></figure>
+        <h4>Frontend Mentor project</h4>
+        <h4>Article preview with tooltip</h4>
+        <p>I found creating the layout on this page a little tricky. It contains a dynamic tool tip that will stay over the arrow when the browser is resized. I adapted the JavaScript from a tutorial on tooltips that i found on YouTube.</p>
+        <nav>
+          <a href="FEM-Article-preview" target="_blank">Visit the Github repo</a>
+          <a href="FEM-Article-preview/" target="_blank">Visit the live site</a>
+        </nav>
+      </section>
+```
+
 ### **Presentational Markup**
   
   This is the type of markup used in word processors and is nearly always hidden from the authors, editors and readers of the document. It uses binary codes embedded in documents to affect the text in a process coined WYSIWYG - What You See Is What You Get. (Wikipedia) [^3]
@@ -92,9 +106,19 @@
   
   With procedural markup, the instructions on how to process the text are embedded in the text itself. Markdown is a great example of this. The document's text is processed from top to bottom and when encountered, the procedural markup is applied to the text it is associated with. (Wikipedia) [^4]
 
+  Below is some markdown text used in the reference section of this document. The `[^1 - Tags](#tags)` will show the text '^ - Tags' with a hyperlink to the Tags section of this document. The `[*What Each Markup Language Is Used For*](https://www.semrush.com/blog/markup-language/)` will show up as 'What Each Markup Language Is Used For'. The text will be italicised, as indicatedby the sourounding **'s. This text will hyperlink to an external webspage.
+
+```md
+- [^1 - Tags](#tags) - Erika Varagouli (2021) [*What Each Markup Language Is Used For*](https://www.semrush.com/blog/markup-language/), Semrush website, accessed 25 August 2022.
+```
+
 ### **Descriptive Markup / Semantic Markup**
   
-  This type of markup is used to convey the type of content that is being wrapped by a tag. It helps to convey the purpose of the text being presented.(Erika Varagouli 2021) [^5] Its purpose is to label parts of a document based on what the content is rather than how that content should be presented. (Wikipedia) [^6]
+  This type of markup is used to convey the type of content that is being wrapped by a tag. It helps to convey the purpose of the text being presented.(Erika Varagouli 2021) [^5] Its purpose is to label parts of a document based on what the content is rather than how that content should be presented. (Wikipedia) [^6] Some examples of markup and where they would be used on a webpage ar shown below.
+
+  <img src="./docs/semantic%20html.png" width="600" alt="semantic html use">
+
+  (W3Schools) [^71]
 
 ## **Q2 - Internet Technologies: Packets, IP, Routers and DNS**
 
@@ -106,11 +130,11 @@
 
 ### Definition - **IP addresses (IPv4 and IPv6)**
   
-  An IP (Internet-Protocol)  address is a unique address that is assigned to any computer or device that is connected to a network. The address is made up of 4 numbers connected (or separated) by full stops. e.g: 142.250.76.100 (MDN) [^8]
+  An IP (Internet-Protocol)  address is a unique address that is assigned to any computer or device that is connected to a network. The address is made up of 4 sets of numbers connected (or separated) by full stops. e.g: 142.250.76.100 (MDN) [^8]
 
 ### Definition - **Routers and Routing**
   
-  Routers are responsible for getting a data packet to its intended destination. Data packets contain the destination IP address amongst other control information. Routing is the process of routers choosing the most efficient path for the data packet to travel on from source to destination.(cisco) [^9]
+  Routers are responsible for getting a data packet to its intended destination. Data packets contain the destination IP address amongst other control information. Routing is the process of routers choosing the most efficient path for the data packet to travel from source to destination. (cisco) [^9]
 
 ### Definition - **Domains and DNS**
   
@@ -120,7 +144,7 @@
 
 ### Explanation - **Packets**
   
-  Packets contributed to the development of the internet by allowing larger chunks of data to be broken up at the server and sent in smaller packets to the user or client. This meant that multiple clients/users could be downloading data from a single website at the same time. This would not be possible if the website had to be downloaded in one large chunk. Having data in small packets rather than large files also makes it easier and more efficient to resend data that is corrupted or lost.(MDN) [^11]
+  Packets contributed to the development of the internet by allowing larger chunks of data to be broken up at the server and sent in smaller packets to the user or client. This meant that multiple clients/users could be downloading data from a single website at the same time. This would not be possible if the website had to be downloaded in one large chunk. Having data in small packets rather than large files also makes it easier and more efficient to resend data that is corrupted or lost. (MDN) [^11]
 
 ### Explanation - **IP addresses (IPv4 and IPv6)**
   
@@ -128,11 +152,11 @@
 
 ### Explanation - **Routers and Routing**
   
-  Routers are an intermediary device and create a network between the sender and the receiver. They will receive data, in the form of packets, from computer A and know which path to send that data so that it reaches its destination at computer B and not at computer C or D. Routers can also link to other routers and this fact allowed for the massive expansion of the internet. Creating a network of networks allows for a theoretical infinite amount of connections between devices on the internet.(MDN) [^13]
+  Routers are an intermediary device and create a network between the sender and the receiver. They will receive data, in the form of packets, from computer A and know which path to send that data so that it reaches its destination at computer B and not at computer C or D. Routers can also link to other routers and this fact allowed for the massive expansion of the internet. Creating a network of networks allows for a theoretical infinite amount of connections between devices on the internet. (MDN) [^13]
 
 ### Explanation - **Domains and DNS**
   
-  With an ever increasing number of web servers on the internet, domains and DNS allowed users to access websites with easy to remember groups of words rather than random numbers separated by full stops. This is facilitated by a type of server called a  DNS server. This is a server that will translate the human readable domain name that is entered by the user into its associated computer readable IP address and will direct the user to the correct web server. (Amazon) [^14]
+  With an ever increasing number of web servers on the internet, domains and DNS allowed users to access websites with easy to remember groups of words rather than random numbers separated by full stops. This is facilitated by a type of server called a DNS server. This is a server that will translate the human readable domain name that is entered by the user into its associated computer readable IP address and will direct the user to the correct web server. (Amazon) [^14]
 
 ## **Q3 - Internet Technologies: TCP, HTTP/HTTPS and Web Browsers**
 
@@ -140,29 +164,29 @@
 
 ### Definition - **TCP**
   
-  The Transmission Control Protocol facilitates the connection between two hosts to allow the guaranteed transmission of data and packets in the correct order to the receiver. (MDN) [^15] Its main features are connection control, reliability, flow control and congestion control.(Noction) [^16]
+  The Transmission Control Protocol facilitates the connection between two hosts to allow the guaranteed transmission of data and packets in the correct order to the receiver. (MDN) [^15] Its main features are connection control, reliability, flow control and congestion control. (Noction) [^16]
 
 ### Definition - **HTTP and HTTPS**
   
-  The main features of the Hypertext Transfer Protocol are the client and the server. Requests for information are sent by the client, normally a web browser, to the server. The server then answers the request by sending back information to the client. This is called a response. The client (almost) always is the side sending the request. And the server will then serve the document requested as a response to the client.(MDN) [^17]
+  The main features of the Hypertext Transfer Protocol are the client and the server. Requests for information are sent by the client, normally a web browser, to the server. The server then answers the request by sending back information to the client. This is called a response. The client (almost) always is the side sending the request. And the server will then serve the document requested as a response to the client. (MDN) [^17]
 Hypertext Transfer Protocol Secure (HTTPS) is the same as HTTP except that it has more security that is provided by an SSL certificate and the SSL protocol. SSL stands for Secure Sockets Layer. (Javatpoint) [^18]
 
 ### Definition - **Web Browsers (requests, rendering and developer tools)**
   
-  A web browser is a piece of software that is used to view or access data on the internet. It sends requests to web servers for data and once it receives the response, it will render the information as a webpage on the user's device. (Wikipedia) [^19]
+  A web browser is a piece of software that is used to access and view data on the internet. It sends requests to web servers for data and once it receives the response, it will render the information as a webpage on the user's device. (Wikipedia) [^19]
   Developer tools are software add-ons that are included with a browser to allow web developers to inspect, test and debug their code. They work with a few different web technologies including HTML, CSS and JavaScript. (Wikipedia) [^20]
 
 **Explain** how each technology has contributed to the development of client and server communication over the internet *(50 - 150 words for each technology)*.
 
 ### Explanation - **TCP**
   
-  TCP’s ethos on accuracy over timeliness is one of the reasons it has contributed to the development of client-server communication over the internet. TCP can handle the extended delays in the delivery of packets that are out of order. This could occur if some packets take a different route to their destination or when corrupted packets need to be retransmitted. If timeliness is more important than accuracy then TCP is not the ideal protocol. For applications, like VOIP, that prioritise timeliness over accuracy, then other protocols such as RTP(Real-time transport Protocol) or UDP (User Datagram Protocol) may be better suited.
+  TCP’s ethos on accuracy over timeliness is one of the reasons it has contributed to the development of client-server communication over the internet. TCP can handle extended delays in the delivery of packets and packets that arrive out of order. Examples of how this might occur are when some packets take a different route to their destination or when corrupted packets need to be retransmitted. If timeliness is more important than accuracy then TCP is not the ideal protocol. For applications like VOIP that prioritise timeliness over accuracy, then other protocols such as RTP(Real-time transport Protocol) or UDP (User Datagram Protocol) may be better suited.
   
   TCP guarantees that the data received at the client is the exact data sent by the server. It achieves this accuracy using a technique called ‘positive acknowledgement with retransmission’. This technique involves the receiver sending an acknowledgement to the sender once the packet is received. The sender keeps a log of when a packet is sent and a timer that starts when the packet was sent. If a certain amount of time elapses and the sender has not received an acknowledgment yet, it will resend the packet. (Wikipedia) [^21]
 
 ### Explanation - **HTTP and HTTPS**
   
-  These technologies have hugley contributed to client-server communication because they allow all the devices connected to the network to communicate with each other while not having a permanent connection between the client and the server. The network would be very limited in its size if every device needed a permanent connection to every other device for communication.
+  These technologies have hugley contributed to client-server communication because they allow all the devices connected to the network to communicate with each other without having a permanent connection between the two parties. A network would be very limited in its size if every device needed a permanent connection to every other device for communication.
   When a connection is needed the client sends a request and the server ‘hears’ the incoming request and the connection is established. The server then waits for the request message from the client. The server's response includes the requested information in a HTTP response. The connection can be closed at any time by either the client or the server. (Wikipedia) [^22]
 
 ### Explanation - **Web Browsers (requests, rendering and developer tools)**
@@ -179,7 +203,7 @@ Hypertext Transfer Protocol Secure (HTTPS) is the same as HTTP except that it ha
 
 ### **Dictionary**
   
-Python dictionaries are collections of data that are stored with key/value pairs where the key is immutable (does not change) and the value is mutable (can be changed). This structure makes it useful for the following reasons:
+Python dictionaries are collections of data that are stored with key/value pairs where the key is immutable (does not change) and the value is mutable (can be changed). This structure makes it useful in the following situations:
 
 - If the data that needs to be stored has a unique reference for the key. An example might be a membership ID, telephone number or email address
 - If the order that the data is stored is not important
@@ -194,7 +218,7 @@ Python lists are implemented as mutable dynamic arrays. This means that Python l
 
 ### **Set**
   
-Python sets are a data structure similar to a dictionary and a list but has its own unique features. A set is an unordered list of entries. However, unlike a list, a set cannot have duplicate entries and each entry needs to be hashable, that is its value does not change over time. It has a few use cases listed below:
+Python sets are a data structure similar to a dictionary and a list but has its own unique features. A set is an unordered list of entries. They are similar to lsits but a set cannot have duplicate entries and each entry needs to be hashable, that is its value does not change over time. It has a few use cases listed below:
 
 - Checking a set for a value is very fast compared to a list. So if you're looking to store unordered, unique items that have a value that won't change then a set is preferable over a list.
 - They are useful for removing duplicates from a series of values
@@ -206,6 +230,8 @@ Python sets are a data structure similar to a dictionary and a list but has its 
 
 Interpreters and compilers both translate higher level programming languages, or source code, into machine code made up of 0’s and 1’s. Although they have similar features they both use different processes to convert human readable source code into machine readable code.
 A compiler will scan the whole program before it translates the source code, as a whole, into machine code. The analysis stage is much longer in duration than that of an interpreter but the overall execution time is faster than interpreters. Compilers require more memory because they create Object Code which requires linking. Common languages that use compilers are C, C++ and Java.
+
+
 An interpreter will translate a program line by line and will take less time to analyse the source code compared to a compiler. However, it will take more time overal to execute the process. It wont produce any Object Code, so has no need for linking like a compiler, so is more efficient with its memory use. Examples of languages that use interpreters are Python, JavaScript and Ruby. (Programiz) [^31]
 
 ## **Q6 - Pros / Cons of Python and JavaScript**
@@ -250,7 +276,8 @@ An interpreter will translate a program line by line and will take less time to 
 
 - Speed limitations
 
-    Because python is interpreted rather than compiled, it executes the code line by line. This can result in slow execution of applications.
+  Because python is interpreted rather than compiled, it executes the code line by line. This can result in slow execution of applications.
+
 - Weak adoption in mobile computing and browsers
   
   Python is popular with server side applications however it is rarely seen used on client side applications because no major web browsers have python built into them. Although python has a framework called Django that can make its interactions with client side applications more streamlined.
@@ -305,8 +332,6 @@ An interpreter will translate a program line by line and will take less time to 
 
 **Identify** TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
 
-
-
 - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
 - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
 - freedom of thought, conscience, speech and the media
@@ -319,7 +344,7 @@ User data is an integral and powerful resource when it comes to technology and i
 
 >“including improved public health, stronger fraud detection, improved efficiencies and processes, relevant advertising, and access to more suitable products”(Phuong Nguyen, Lauren Solomon 2018) [^55] 
  
- However this powerful resource comes with widespread challenges and high consequences if it is not handled ethically at any stage of the process from gathering, through  to storage and eventual use. 
+However this powerful resource comes with widespread challenges and high consequences if it is not handled ethically at any stage of the process from gathering, through to storage and eventual use.
 Data ethics are a huge concern to IT professionals. Whether you are directly or indirectly responsible for writing code that gathers user information, or you are managing a database containing the personal and private information of you users, having a broad understanding of data ethics can help you spot unethical data practices or give you tools to avoid it in the first place.
 Listed below are 5 data ethics principles that should be taken into consideration whenever you are handling user data as an IT professional: (Catherine Cote 2021)[^56]
 
@@ -329,7 +354,7 @@ Listed below are 5 data ethics principles that should be taken into consideratio
 
 - Transparency
 
-  Users also have the right to know how their personal information is going to be used. Whether a users data is going to be used to personalise a website for them, or be applied to an algorithm for targeted advertising, they are lawfully within their rights to know what their data will be used for so that they have the opportunity to opt out if they do not agree with the way their data is being used.
+  Users also have the right to know how their personal information is going to be used. Whether a users data is going to be used to personalise a website for them, or be applied to an algorithm for targeted advertising, they are lawfully within their rights to have knowledge on what their data will be used for so that they have the opportunity to opt out if they do not agree with the way their data is being used.
 
 - Privacy
   
@@ -337,26 +362,28 @@ Listed below are 5 data ethics principles that should be taken into consideratio
 
 - Intention
 
-  Intention is everything. Obviously if your intentions are to profit from weakness, prey on the vulnerable or involve any sort of malicious intent then it is certainly not ethical to collect data for that purpose. Even with good intentions, IT professionals should still question whether each piece of data being collected is absolutely necessary for their core goals to function correctly.
+  Intention is everything. Obviously if your intentions are to profit from weakness, prey on the vulnerable or involve any sort of malicious intent then it is certainly not ethical to collect data for that purpose. Even with good intentions, IT professionals should still question whether each piece of data being collected is absolutely necessary for their core goals to or fo their applications to work correctly.
 
 - Outcomes
 
-  Even when intentions are good, and only the most necessary data has been collected there can still be outcomes that inadvertently harm individuals or groups of people. This is know as a disparate impact and 
+  Even when intentions are good, and only the most necessary data has been collected there can still be outcomes that inadvertently harm individuals or groups of people. This is know as a disparate impact and
   
-  >“is outlined in the Civil Rights act as unlawful” (Catherine Cote 2021)[^57] 
+  >“is outlined in the Civil Rights act as unlawful” (Catherine Cote 2021)[^57]
   
-  An example of this could be having a common name or a name that you have slightly changed on your social media profile and being accused of a crime you didn't commit. This happened recenlty in Western Australia where a man ,Terrance Flowers, was wrongly accused by the Seven Network as being involved in the abduction of four year old Cleo Smith. 
+  An example of this could be having a common name or a name that you have slightly changed on your social media profile and being accused of a crime you didn't commit. This happened recenlty in Western Australia where a man ,Terrance Flowers, was wrongly accused by the Seven Network as being involved in the abduction of four year old Cleo Smith.
   
   >“While Mr Flowers shares the same name on Facebook as the accused abductor, the spelling is different. Mr Flowers is a 27-year-old Nyamal man from the Pilbara living in Karratha, whereas Mr Kelly, who is in police custody, is 36 and lived in Carnarvon.
   The Seven Network published unblurred images taken from Mr Flowers’ Facebook page with “Terrance Kelly” as the caption across multiple platforms, wrongfully identifying him as the man police had taken into custody earlier on Wednesday.” (Lauren Pilat 2021) [^58]
 
-  A more recent incident of an unintended outcome involves a fitness/weight loss app, Move with Us, that provides online fitness programs and encourages users to take progress photos to show their improvement as they use the app. There was good intentions behind this idea of showing users how much their health has improved and how good they look to motivate them further. But with the recent data breach this has resulted in users “logging into other people’s profiles when they opened the app, giving them access to their personal information, including pictures (often either naked or in underwear), emails, full names, date of birth and address. Each time a user logged out and tried to log back in, they were in another person’s profile. There were instances of users logging into as many as 10 different profiles as the problem persisted for more than two hours." (Hamish Spence 2022)[^59]
+  A more recent incident of an unintended outcome involves a fitness/weight loss app, Move with Us, that provides online fitness programs and encourages users to take progress photos to show their improvement as they use the app. There was good intentions behind this idea of showing users how much their health has improved and how good they look to motivate them further. But with the recent data breach this has resulted in users 
+  
+  >“logging into other people’s profiles when they opened the app, giving them access to their personal information, including pictures (often either naked or in underwear), emails, full names, date of birth and address. Each time a user logged out and tried to log back in, they were in another person’s profile. There were instances of users logging into as many as 10 different profiles as the problem persisted for more than two hours." (Hamish Spence 2022)[^59]
 
 The Privacy act 1988 is the 
 
 >“principal piece of Australian legislation protecting the handling of personal information about individuals. This includes the collection, use, storage and disclosure of personal information in the federal public sector and in the private sector.” (Attorney-General's Department 2022)[^60]
 
-The online privacy bill was drafted in 2021 will help strengthen the privacy act in the digital age. It introduces an online privacy code for social media and other online platforms.
+The online privacy bill was drafted in 2021 and will help strengthen the privacy act in the digital age. It introduces an online privacy code for social media and other online platforms.
 
 The privacy act sets out the Australian Privacy Principles that require an APP agency or entity (generally speaking a federal government body or an organisation) to 
 
@@ -381,11 +408,11 @@ Another principle in the privacy act that is relevant to the above story about t
 (c)  the information is not contained in a Commonwealth record; and
 (d)  the entity is not required by or under an Australian law, or a court/tribunal order, to retain the information; the entity must take such steps as are reasonable in the circumstances to destroy the information or to ensure that the information is de‑identified." (Australian Goverment)[^63]
 
-Although the unorthoised access of other users Move with Us accounts may not have been malicious it still occured and its a breach of those user's privacy. The principle also states that steps should be taken to ensure the information is deidentified. This could be achieved with the before and after photos of the fitness app users by perhaps requesting that photos do not include the face or bluring the users faces.
+Although the unauthorised access of other user's Move with Us accounts may not have been malicious it still occured and its a breach of those user's privacy. The principle also states that steps should be taken to ensure the information is deidentified. This could be achieved with the before and after photos of the fitness app user's by perhaps requesting that photos do not include the face or bluring their faces.
 
 ### **GPS tracking data and other types of data**
 
-The Global Positioning System which became operational in 1993. Its use was limited to the American Military. (Wikipedia) [^64] 30 years later it's a piece of technology that is globally ubiquitous and in almost every smartphone sold. (Fred Zahradnik 2021) [^65] The proliferation of GPS devices have changed the way we live and made huge improvements in our lives in areas including day to day commutes, people travelling solo or travelling to remote locations. There are also the benefits to businesses being able to attract people who are in the local area. GPS tracking has also aided police forces in rescue missions, crime investigations and allowed logistics businesses to become more efficient in the tracking and delivery of goods around the world.
+The Global Positioning System which became operational in 1993. Initially its use was limited to the American Military. (Wikipedia) [^64] 30 years later it's a piece of technology that is ubiquitous and in almost every smartphone sold. (Fred Zahradnik 2021) [^65] The proliferation of GPS devices has changed the way we live and made huge improvements in our lives in areas including day to day commutes, solo travelling or travelling to remote locations. There are also the benefits to businesses being able to attract people who are in the local area. GPS tracking has also aided police forces in rescue missions, crime investigations and allowed logistics businesses to become more efficient in the tracking and delivery of goods around the world.
 
 These benefits come alongside concerns for the people using devices and huge responsibilities for the companies and professionals developing the technology. Cheif amongst these concerns is privacy. There are seemingly endless situations where an IT professional needs to be ethically aware of how the GPS devices are being used and develop policies around their ethical use. Below are just a few examples.
 
@@ -395,11 +422,11 @@ In most cases a person's location doesn't need to be known unless they are doing
 
 - What kind of surveillance can a parent use on a child
 
-Although a missing child has a better chance of being found if they are wearing a tracking device it brings up some ethical issues of consent. At what age does the child have a right to determine whether they want to be tracked or not? Are parents developing unhealthy relationships with their children by relying on technology rather than trust? Parents who have lost children would argue that a gps tracker would be life saving technology but it does bring up issues that need consideration by those developing the technology as well as the users.
+Although a missing child has a better chance of being found if they are wearing a tracking device it brings up some ethical issues of consent. At what age does the child have a right to determine whether they want to be tracked or not? Are parents developing unhealthy relationships with their children by relying on technology rather than trust? Parents who have lost children would argue that a gps tracker would literally be life saving technology but it does bring up issues that need consideration by those developing the technology as well as the those using it.
 
 - Do police need a warrant to track a suspected criminal or terrorist?
 
-There have been several cases where tracking a person with a GPS is similar to following them on the street. This is a dangerous road to go down as gps tracking is much more pervasive and powerful. A person is much more aware of someone following them down a street and a tracker can work anytime and anywhere. Warrants and laws to place a GPS tracker on suspected criminals or regular citizens are essential to make sure they are used ethically and not left open to nefarious use by both governments and citizens. (K. Michael, A. McNamee, M. G. Michael 2006)[^66]
+There have been several cases heard where tracking a person with a GPS is has been deemed similar to following them on the street. This is a dangerous precedence to set because gps tracking is much more pervasive and powerful that following someone in real life. A person is much more aware of someone following them down a street and a tracker can work anytime and anywhere. Warrants and laws to place a GPS tracker on suspected criminals or regular citizens are essential to make sure they are used ethically and not left open to nefarious use by both governments and citizens. (K. Michael, A. McNamee, M. G. Michael 2006)[^66]
 
 The Surveillance Devices Act 2007 has some strong laws with regard to location data and other data collected without consent and provides a good framework for the devives and data to be used in an ethical way. Part 2, 9. states that:
 
@@ -415,14 +442,15 @@ setion 10 also states:
 (a)  entry onto or into the premises without the express or implied consent of the owner or occupier of the premises, or
 (b)  interference with the computer or a computer network on the premises without the express or implied consent of the person having lawful possession or lawful control of the computer or computer network."
 
-Both these sections of the Surveillance Devices Act 2007 make it quite clear that you cannot record someone's location and movements or the data they send or receive from their devices without their consent. However, outside Australia, as I explain in the case study below, the increased use of spy apps being used in relationships that have broken down falls into a grey area and put a spotlight on the need for laws to catch up with the every growing pace of technological development. (NSW Government) [^67]
+Both these sections of the Surveillance Devices Act 2007 make it quite clear that you cannot record someone's location and movements or the data they send or receive from their devices without their consent. However, outside Australia, as I explain in the case study below, the increased use of spy apps being used in relationships that have broken down falls into a grey area and has put a spotlight on the need for laws to catch up with the ever growing pace of technological development. (NSW Government) [^67]
 
 ### **Case Study: GPS tracking data and other types of data - Monitoring spouses with Spyware**
 
 
 Conduct **research** into a case study of **ONE** of the ethical issues you have chosen **discuss** how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. *(Word count guide: 400 - 600 words)*
 
-Monitoring devices, sometimes referred to as Spyware are devices that were once only available to governments and corporations have now become so inexpensive that they are being used by people suspicious that their partners may be cheating on them. Although illegal in Australia, these spyware apps operate in a legal grey are in other parts of the world. Josh King who is the Chief Legal Officer of an online legal marketplace in the us says
+Monitoring devices, sometimes referred to as Spyware are devices that were once only available to governments and corporations have now become so inexpensive that they are being used by people suspicious that their partners may be cheating on them. Although illegal in Australia, these spyware apps operate in a legal grey area in other parts of the world. Josh King who is the Chief Legal Officer of an online legal marketplace in the us says
+
 >“It’s a legal grey area, in that the laws haven’t been truly tested in this arena as of yet since the technology is relatively new, so as relevant cases move through the legal system, they’ll be decided on a case by case basis,” (Jenny Harrison 2019)[^68]
 
 Steven Burgess of Burgess Consulting & Forensics explains that in the US
@@ -433,13 +461,11 @@ However he goes on to demonstrate the legal ambiguity surrounding the issue by a
 
 >“phones and other devices are community property, by default, for married couples almost everywhere. “Looking at what’s on it is generally legal and considered ethical,” explains Burgess. “In other words, what’s been stored there is fair game.” (Mary Fetzer 2016) [^69]
 
-In the following case study, the client of a full service private investigation firm, was involved in divorce proceedings as a high net worth individual. She had suspicions that her ex partner had married her solely for her money and had installed spyware on her computers to gain information about her financial situation. She also believed that she was being stalked as he would often appear at the same events of stores without her having given out information about her future plans. The client reported symptoms, including running extremely slow and battery life discharging unusually quick, that would indicate her iPone 4s has spyware installed. McCann investigators found a keylogger and spyware installed on her devices. (McCann Investigators 2017) [^70]
+In the following case study, the client of a full service private investigation firm, was involved in divorce proceedings as a high net worth individual. She had suspicions that her ex partner had married her solely for her money and had installed spyware on her computers to gain information about her financial situation. She also believed that she was being stalked as he would often appear at the same events or stores without her having given out information about her future plans. The client reported symptoms on her phone, including running extremely slow and battery life discharging unusually quick, that would indicate her iPone 4s had spyware installed. McCann investigators found a keylogger and spyware installed on her devices. (McCann Investigators 2017) [^70]
 
-An IT professional may encounter a situation like this as either an employee of the investigation firm performing the technological forensics on the clients property or he/she could be the person that developed the spyware. Both positions have their unique ethical perspective on this scenario. The person doing the forensics can see that even though this is non-violent cyber stalking it's still causing the client hardship and stress. And that there is the real potential for the stalking to escalate to violence or something even more severe in the future. But they also work for an employer that engages in private investigations themselves, which are effectively sponsored stalking. Knowing that at the very least they are working in a legally grey area, and in some cases may be working in a state where there is no law against the use of these devices makes it hard to decide which way direction to take, the direction the moral compass is pointing to or take guidance from the lawful compass.
+An IT professional may encounter a situation like this as either an employee of the investigation firm performing the technological forensics on the clients property or he/she could be the person that developed the spyware. Both positions have their unique ethical perspective on this scenario. The person doing the forensics can see that even though this is non-violent cyber stalking it's still causing the client hardship and stress. And that there is the real potential for the stalking to escalate to violence in the future. But they also work for an employer that engages in private investigations themselves, which are effectively sponsored stalking. Knowing that at the very least they are working in a legally grey area, and in some cases may be working in a state where there is no law against the use of these devices makes it hard to decide which way direction to take, the direction the moral compass is pointing to or refer to the law for guidance.
 
-The IT professional who develops this kind of spyware has a hard decision to make as well. Do they take the moral high ground or keep operating under the current laws even though they are quite ambiguous. Perhaps they could collaborate with lawmakers to give them a much more informed perspective of what the technology does and how its being used and also abused. This consultation and communication between the private and public sectors could be the start of a relationship where newer, more specific laws could be created to target the nefarious use of this technology. Although this might be seen as resulting in a downtrend of people purchasing and using the spyware technology, with the relationship that would have formed with the private sector it may result in the technology actually being used in a larger variety of situations including fighting organised crime or using the technologies to create more efficiencies waste disposal or improvements in public transport networks.
-
-
+The IT professional who develops this kind of spyware has a hard decision to make as well. Do they take the moral high ground or keep operating under the current laws even though they are quite ambiguous. Perhaps they could collaborate with lawmakers to give them a much more informed perspective of what the technology does and how its being used and also abused. This consultation and communication between the private and public sectors could be the start of a relationship where newer, more specific laws could be created to target the unethical use of this technology. Although this might be seen as resulting in a downtrend of people purchasing and using the spyware technology, with the relationship that would have formed with the private sector it may result in the technology actually being used in a larger variety of situations including fighting organised crime or using the technologies to create more efficiencies and improvements in public transport networks or other public services.
 
 ## **Q8 - Control Flow in Python**
 
@@ -461,12 +487,12 @@ Any non-zero, or non-empty data structure will evaluate as truthy (True).  An em
 
 Single line statements can be placed on the same line as the condition
 ```py
-    If temp < 15: print("It's cold outside")
+    if temp < 15: print("It's cold outside")
 ```
 
 Multiline statements are placed on separate lines after the conditional statement and need to be indent as a block of code
 ```py
-    If temp < 15:
+    if temp < 15:
       print("It's cold outside")
       print("It would be a good idea to wear a jacket")
 ```
@@ -476,11 +502,25 @@ Multiline statements are placed on separate lines after the conditional statemen
 
 If there are other expressions to be evaluated then python has `elif` and `else` that can be used to further control the execution and output. Each `elif` will be executed in sequential order until one evaluates as true. That code will be executed and the `if` statement will end. If no `elif` statements are evaluated as true then the `else` clause can be used to execute code when the `if` or all `elif` statements fail. (O’Reilly Media) - [^37]
 
+```py
+if temp < 15:
+    print("It's cold outside")
+    print("It would be a good idea to wear a jacket")
+elif temp > 15 and temp < 20:
+    print("It's warm outside")
+    print("It would be a good idea to wear jeans and a t-shirt")
+elif temp > 20 and temp < 30:
+    print("It's really warm outside")
+    print("It would be a good idea to wear shorts, t-shirt and a hat")
+else:
+    print("It's really hot, go to the beach")
+```
+
 ### **Repetition control flow**
 
 #### **While loop**
 
-The python statement, while, uses repetition to continually execute a line or block of code for as long as the expression being tested evaluates as true. It is important to include code within the body of the while loop that will eventually make the expression evaluate to false, otherwise the loop will run indefinitely. 
+The python statement, while, uses repetition to continually execute a line or block of code for as long as the expression being tested evaluates as true. It is important to include code within the body of the while loop that will eventually make the expression evaluate to false, otherwise the loop will run indefinitely.
 
 `Break` or `return` statements can be used to exit a while loop.
 ```py
@@ -503,7 +543,7 @@ After 4 is printed, the loop tests the condition again and this time it fails so
   
 #### **For loop**
 
-The `for` loop uses repetition to allow you to execute a line of code many times by iterating (looping through) an iterable. (James Gallagher, 2020) [^39] An iterable is any Python object that is “capable of returning its members one at a time, permitting it to be iterated over in a for-loop.” Examples of iterables include lists, tuples and strings. (Ryan Soklaski 2021) [^40]
+The `for` loop uses repetition to allow you to execute a line of code a certain amount of times by iterating (looping through) an iterable. (James Gallagher, 2020) [^39] An iterable is any Python object that is “capable of returning its members one at a time, permitting it to be iterated over in a for-loop.” Examples of iterables include lists, tuples and strings. (Ryan Soklaski 2021) [^40]
 
 
 The `for` loop works by first defining an iterable that you want to loop through. Then creating a variable to hold the value of the current element in the iterable that is being returned. Lastly the code that is to be performed on each loop, on the current value of the variable, is defined. This repetition will be continued until the end of the iterable has been reached.(Charlie Custer, 2019) [^41]
@@ -532,7 +572,7 @@ If a `break` statement is encountered the loop terminates. However if a `continu
   
 `Match case` was introduced with the release of Python 3.10 The `match case` statement is similar but more powerful version of the `if/else` statement and allows for more complicated pattern matching while requiring less code.
 
-In the example below, a variable `color` is defined and we use the keyword `match` to associate it with cases defined after each keyword `case`. `other` is used in a similar manner to the `else` statement. It can also be written as `case _` (Luke Hande (2022) - [^43]
+In the example below, a variable `color` is defined and we use the keyword `match` to associate it with cases defined after each keyword `case`. `other` is used in a similar manner to the `else` statement. It can also be written as `case _` (Luke Hande 2022) - [^43]
 ```py
   color = 'red'
   match color:
@@ -565,7 +605,7 @@ Below is an example in Python that looks like type coercion but is in fact impli
 7.5
 ```
 In this example the result `c` is a float. Python has not used type coercion to force `a`(int) to become a float to perform the calculation.
-It has instead delegated the the responsibility of performing the calculation to both the integer(a) and float(b)    
+It has instead delegated the responsibility of performing the calculation to both the integer(a) and float(b)    
 
 When Python see’s the addition symbol + it calls the `__add__` method on the left side of the equation and passes the right side of the equation as an argument. So in our example above, the `__add__` method is called on `a` and `b` is passed as an argument. The result is:
 
@@ -612,7 +652,7 @@ There are numerous ways that data can be stored in variables in Python. Data typ
 
 ### **Numeric Types**
 
-#### int
+#### **int**
 
 An integer represents a positive or negative whole number (no decimal places). To creat an integer variable we simply assign a whole number to a variable name.
 
@@ -622,7 +662,7 @@ age = 42
 
 When creating a variable in this way `42` is referred to as an **integer literal** because we have literally typed into the code.
 
-When using larger whole numbers, python does not allow commas `,` to group numbers into three's as it typically done. However, Python does allow you to use underscores `_` to group numbers together for ease of reading. The two examples below are both valid examples of represening and integer with a valie of 10 million.
+When using larger whole numbers, python does not allow commas `,` to group numbers into three's as it typically done. However, Python does allow you to use underscores `_` to group numbers together for ease of reading. The two examples below are both valid examples of represening and integer with a value of 10 million.
 ```py
 >>> 10000000
 10000000
@@ -632,7 +672,7 @@ When using larger whole numbers, python does not allow commas `,` to group numbe
 
 There is no limit of how large an integer can be in Python.  (David Amos 2020) - [^45]
 
-#### float
+#### **float**
 
 Floating point numbers or floats, are used for numbers that have decimal points. Floating point literals can be created the same way as integers. There is one extra way a floating point number can be assigned to a variable in python, using the E notation. All 3 ways to create a floating point literal are shown below.
 ```py
@@ -657,7 +697,7 @@ So even though this looks like an exact number, know that the actual value store
 
 
 
-#### complex
+#### **complex**
 
 One of pythons strengths is its handling of numbers and math in the domains of scientific computing and computer graphics. Python has a data type that handle complex numbers that are often used in precalculus and higher-level algebra. A complex numbers has two parts, a **real** part and an **imaginary** part. To create a complex number we seperate the real and imaginary parts of the complex number with a plus and a traling j, like below.
 
@@ -668,7 +708,7 @@ All arithmetic operations, except for floor division, that can be used on intege
 
 ### **Text Type**
 
-#### str
+#### **str**
 
 Strings are immutable (unchangeable) sequences of Unicode characters. String literals can be created in 3 different ways. For example:
 
@@ -706,12 +746,12 @@ TypeError: 'str' object does not support item assignment
 
 ### **Boolean Type**
 
-#### bool
+#### **bool**
 
 Python 3 has a Boolean data type. Objects that are of a Boolean type can be either True or False.
-Python expressions are often evaluated in a Boolean context. This gives rise to the expressions of "truthy" and "falsey". Obviously the boolean expressions True and False represent theie counterparts of truthy and falsey but non-boolean objects can also be expressed as being truthy or falsey.
+Python expressions are often evaluated in a Boolean context. This gives rise to the expressions of "truthy" and "falsey". Obviously the boolean expressions True and False represent truthy and falsey resepectivley but non-boolean objects can also be expressed as being truthy or falsey.
 
-Boolean aer considered numeric in Python. As such, they can be used for arithmetic oepations and can be compared to numbers. This is where truthy and falsey come into play for non boolean objects. Any non-zero object will be considered truthy. And any zero object, empty sequence or collection or None objects will be considered falsey. (Estefania Cassingena Navone 2020) [^48]
+Boolean data types are considered to be numeric in Python. As such, they can be used for math operations and can be compared to numbers. This is where truthy and falsey come into play for non boolean objects. Any non-zero object will be considered truthy. And any zero object, empty sequence or collection or None objects will be considered falsey. (Estefania Cassingena Navone 2020) [^48]
 
 ```py
 >>> list_a = []
@@ -733,11 +773,11 @@ False
 
 ### **Sequnce Type**
 
-#### tuple
+#### **tuple**
 
 Tuples are similar to lists in that they are a sequence of ordered data however they differ because of the fact that tuples are immutable, they cannot be changed. Tuples are indexed and the elements are accessed in a similar way to a list but rather use () instead of [] with the index number. (Tutorialspoint) [^49]
 
-Tuples are also created in a similar way to lists but use () instead of [] and accessing the elements is the same as list Below are examples of creating and accessing tuples.
+Tuples are also created in a similar way to lists but use () instead of [] and accessing the elements is the same as list. Below are examples of creating and accessing tuples.
 
 ```py
 >>> tuple_1 = ('Nissan', 'Toyota', 2010, 2022)
@@ -747,11 +787,16 @@ Tuples are also created in a similar way to lists but use () instead of [] and a
 >>> tuple_2[4]
 5
 ```
-The example belows demostrates that tuple are an immutable dta type:
+The example below demostrates that tuples are an immutable data type:
 
 ```py
 >>> tuple_1 = ('Nissan', 'Toyota', 2010, 2022)
 >>> tuple_2 = (1, 2, 3, 4, 5)
+>>> tuple_1
+('Nissan', 'Toyota', 2010, 2022)
+>>> tuple_2
+(1, 2, 3, 4, 5)
+>>> tuple_1[2] = 2023
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
@@ -767,7 +812,7 @@ However tuples can be added together to creat new tuples:
 ('Nissan', 'Toyota', 2010, 2022, 1, 2, 3, 4, 5)
 ```
 
-Although tuples are very similar to lists they are the prefered data type if you know that your data will not change over time. When comaring a list and a tuple that contain exactly the same data, a tuple will require less memory that a list. This may make it a better option if memory use is a major factor in design. (Erdem Isbilen) [^50] See example below that shows a tuple taking up less memory than a list.
+Although tuples are very similar to lists they are the prefered data type if you know that your data will not change over time. When comaring a list and a tuple that contain exactly the same data, a tuple will require less memory than a list. This may make it a better option if memory use is a major factor in design. (Erdem Isbilen) [^50] See example below that shows a tuple taking up less memory than a list.
 
 ```py
 >>> import sys
@@ -779,13 +824,13 @@ Although tuples are very similar to lists they are the prefered data type if you
 104
 ```
 
-Tulpes also have slightly faster access times that lists. This may also be a consideration when choosing between a ist and a tuple for storing ordered data.
+Tulpes also have slightly faster access times that lists. This may also be a consideration when choosing between a list and a tuple for storing ordered data.
 
 ### **None Type**
 
-#### None
+#### **None**
 
-Python uses the keyword `None` to define null or empty obejcts are variables. It does all the same things that `Null` does in other languages though its used entirely differntly in Python.`None` is not defined as zero or any other value, in Python `None` is an object and treated as a first class citizen.
+Python uses the keyword `None` to define null or empty obejcts and variables. It does all the same things that `Null` does in other languages though its used entirely differntly in Python. `None` is not defined as zero or any other value, in Python `None` is an object and treated as a first class citizen.
 
 None is the value that is returned by all functions when there is no return statement:
 
@@ -817,9 +862,13 @@ The function below appends a name to a list and works as normal when passing a l
 >>>
 ```
 
-However if we call add_name numerous times with a default argument and each time its called assign the value to a new variable we will get an unexpected result.
+However if we call add_name numerous times and assign the value to a new variable we will get an unexpected result if we have a default argument for the second paramater.
 
 ```py
+>>> def add_name(name, people=[]):
+...     people.append(name)
+...     return people
+
 >>> x = add_person('Jon')
 >>> print(x)
 ['Jon']
@@ -963,11 +1012,8 @@ Demonstrate your algorithmic thinking through completing the following two tasks
 
 ### **Flow chart - Primer numbers between 1 - 100**
 
-<br>
-
 <img src="./docs/workbook-q-14-flowchart.png" width="600" alt="Q-13 Code Snippet">
 
-<br>
 
 (Al Sweigart) [^53] (Programtopia) [^54]
 
@@ -1123,7 +1169,7 @@ full_skill_set = {
 #dictionary to hold appplicants skill set
 candidate_skill_set = {}
 
-#calling userprompt for first time with no skillset listed - just insctructions
+#calling userprompt for first time with no skillset listed - just instructions
 user_prompt()
 
 #wait for keypress,
@@ -1175,7 +1221,7 @@ while len(candidate_skill_set) <= 7:
     if candidate_skill_entered == "c":
         break
 
-    #if the user input is not a listed skill, print an error message
+    #if the user input is not a listed skill, or the letters C, c, print an error message
     if not candidate_skill_entered in full_skill_set:
         print("\n==================================================================================================")
         print(f"\t{candidate_skill_entered} is not a valid selection!\n\tPlease try again")
@@ -1207,7 +1253,7 @@ else:
 #iterate over key and value in full skillset. If current key is not in candidate_skill_set
 #then print skill and points to screen.
 
-#if else here is to to print the singular 'point' for pythons. The rest of the skils use the plural 'points'
+#if else here is to to print the singular 'point' for python skill. The rest of the skils use the plural 'points'
 for key, value in full_skill_set.items():
     if not key in candidate_skill_set:
         if key == "python":
@@ -1289,7 +1335,8 @@ GPS Tracking and Monitoring*](https://www3.nd.edu/~cpoellab/teaching/cse40827/pa
 - [^67 - GPS tracking data](#gps-tracking-data-and-other-types-of-data) - NSW Government [*Surveillance Devices Act 2007 No 64*](https://legislation.nsw.gov.au/view/whole/html/inforce/current/act-2007-064#statusinformation) NSW Legislation website, accessed 9 September 2022.
 - [^68 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - Jenny Harrison (2019) [*Is it Legal to Monitor Your Spouse Using Spyware?*](https://www.lawfuel.com/blog/is-it-legal-to-monitor-your-spouse-using-spyware/), LawFuel website, accessed 9 September 2022.
 - [^69 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - Mary Fetzer (2016) [*Should You Use an App to Spy on Your Cheating Spouse?*](https://www.divorcemag.com/blog/should-you-use-an-app-to-spy-on-your-cheating-spouse), divorcemag website, accessed 9 September 2022.
-- [^70 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - (McCann Investigators 2017) [*Case Study:  Cyber Stalking and Spyware in Divorce Cases*](https://silo.tips/download/case-study-cyber-stalking-and-spyware-in-divorce-cases#), silo.tips website, accessed 9 September 2022.
+- [^70 - Monitoring spouses with Spyware](#case-study-gps-tracking-data-and-other-types-of-data---monitoring-spouses-with-spyware) - McCann Investigators (2017) [*Case Study:  Cyber Stalking and Spyware in Divorce Cases*](https://silo.tips/download/case-study-cyber-stalking-and-spyware-in-divorce-cases#), silo.tips website, accessed 9 September 2022.
+- [^71 -Descriptive Markup / Semantic Markup](#descriptive-markup--semantic-markup) - W3Schools [*HTML Semantic Elements*](https://www.w3schools.com/html/html5_semantic_elements.asp), W3Schools website, accessed 11 September 2022.
 
 
  [Go to top of page](#coder-academy---assignment-t1a1---workbook-submitted-by-mario-lisbona)
