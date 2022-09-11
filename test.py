@@ -38,7 +38,45 @@
 
 # print(y)
 
-temp = 0
+# temp = 0
+
+# if temp < 15:
+#     print("It's cold outside")
+#     print("It would be a good idea to wear a jacket")
+# elif temp > 15 and temp < 20:
+#     print("It's warm outside")
+#     print("It would be a good idea to wear jeans and a t-shirt")
+# elif temp > 20 and temp < 30:
+#     print("It's really warm outside")
+#     print("It would be a good idea to wear shorts, t-shirt and a hat")
+# else:
+#     print("It's really hot, go to the beach")
+
+
+def rain_temp(raining, temperature):
+    """
+    This functions prints out a different message depending on whether its raining or not and what the temperature is.
+
+    Args:
+        raining (Bool): true of false pool - whether its raining or not.
+        temperature (int): The temperature in degrees.
+    """    
+    if raining and temperature < 15:
+        print("\nIt's wet and cold")
+    elif not raining and temperature < 15:
+        print("\nIt's not raining but cold")
+    elif not raining and temperature >= 15:
+        print("\nIt's warm but not raining")
+    else:
+        print("\nIt's warm and raining")    
+
+rain_temp(True, 14)
+rain_temp(False, 14)
+rain_temp(False, 15)
+rain_temp(True, 46)
+rain_temp(False, 46)
+
+
 
 if temp < 15:
     print("It's cold outside")
@@ -51,4 +89,3 @@ elif temp > 20 and temp < 30:
     print("It would be a good idea to wear shorts, t-shirt and a hat")
 else:
     print("It's really hot, go to the beach")
-
