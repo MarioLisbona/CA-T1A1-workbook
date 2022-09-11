@@ -911,7 +911,7 @@ Here’s the problem: “There is a restaurant serving a variety of food. The cu
 - Identify the classes you would use to solve the problem
 - Write a short explanation of why you would use the classes you have identified
 
-<img src="./docs/Q11-restaurant-classes.png" width="600" alt="q-13 restaurant classe">
+<img src="./docs/Q11-restaurant-classes.png" alt="q-13 restaurant classe">
 
 The Company class is a base class. Each new restaurant will inherit its attributes
 
